@@ -1,0 +1,31 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate",
+  "main": "server.js",
+  "author": "Emily Nguyen <emilymylinh@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/emnguyen/boilerplate.git"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  },
+  "engines": {
+    "node": "9.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node server.js",
+    "start:dev": "NODE_ENV=development gulp"
+  }
+}
