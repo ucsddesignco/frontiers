@@ -1,3 +1,23 @@
 /*
  * @font-face declarations
  */
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('../fonts/filson_pro_bold-webfont.eot');
+  src: url('../fonts/filson_pro_bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/filson_pro_bold-webfont.woff2') format('woff2'),
+        url('../fonts/filson_pro_bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('../fonts/filson_pro_book-webfont.eot');
+  src: url('../fonts/filson_pro_book-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/filson_pro_book-webfont.woff2') format('woff2'),
+        url('../fonts/filson_pro_book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

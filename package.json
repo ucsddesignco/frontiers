@@ -1,12 +1,12 @@
 {
-  "name": "boilerplate",
+  "name": "frontiersfa18",
   "version": "1.0.0",
-  "description": "boilerplate",
+  "description": "Design sprints and lightning talks focusing on applying human-centered design to different fields and industries.",
   "main": "server.js",
   "author": "Emily Nguyen <emilymylinh@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/emnguyen/boilerplate.git"
+    "url": "git://github.com/designatucsd/frontiers-fa18.git"
   },
   "dependencies": {
     "express": "^4.16.3",
