@@ -11,5 +11,26 @@ body {
 }
 
 .container {
-  padding: 5.5rem $side-padding;
+  padding: 5rem $side-padding;
+}
+
+.container-sm {
+  padding: 2.5rem $side-padding;
+}
+
+.card {
+  margin: 3rem 0 5rem;
+  &:last-child {
+    margin: 3rem 0 0;
+  }
+}
+
+.card-img {
+  img {
+    width: 100%;
+  }
+}
+
+.card-text {
+  margin-top: 2rem;
 }

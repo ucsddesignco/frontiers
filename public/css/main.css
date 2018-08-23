@@ -61,6 +61,7 @@ ol,
 output,
 p,
 h3,
+a,
 pre,
 q,
 ruby,
@@ -152,7 +153,21 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 .container {
-  padding: 5.5rem 4rem; }
+  padding: 5rem 4rem; }
+
+.container-sm {
+  padding: 2.5rem 4rem; }
+
+.card {
+  margin: 3rem 0 5rem; }
+  .card:last-child {
+    margin: 3rem 0 0; }
+
+.card-img img {
+  width: 100%; }
+
+.card-text {
+  margin-top: 2rem; }
 
 /*
  * @font-face declarations
@@ -161,14 +176,32 @@ body {
   font-family: 'Filson Pro';
   src: url("../fonts/filson_pro_bold-webfont.eot");
   src: url("../fonts/filson_pro_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/filson_pro_bold-webfont.woff2") format("woff2"), url("../fonts/filson_pro_bold-webfont.woff") format("woff");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'Filson Pro';
+  src: url("../fonts/filson_pro_medium-webfont.eot");
+  src: url("../fonts/filson_pro_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/filson_pro_medium-webfont.woff2") format("woff2"), url("../fonts/filson_pro_medium-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+/*
+@font-face {
+  font-family: 'Filson Pro';
+  src: url('../fonts/filson_pro_regular-webfont.eot');
+  src: url('../fonts/filson_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/filson_pro_regular-webfont.woff2') format('woff2'),
+        url('../fonts/filson_pro_regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+@font-face {
+  font-family: 'Filson Pro';
   src: url("../fonts/filson_pro_book-webfont.eot");
   src: url("../fonts/filson_pro_book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/filson_pro_book-webfont.woff2") format("woff2"), url("../fonts/filson_pro_book-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal; }
 
 /*
@@ -177,38 +210,43 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'Filson Pro', 'Helvetica', 'Arial', sans-serif;
-  color: #232323; }
+  color: #232323;
+  font-weight: 400; }
+
+h1, h2, h3 {
+  font-weight: 700; }
 
 h1 {
   font-size: 2.4rem;
   line-height: 3.4rem;
-  font-weight: bold;
   color: #016696; }
 
 h2 {
   color: #016696;
   font-size: 1.8rem;
-  font-weight: bold;
   line-height: 2.6rem; }
-
-h3 {
-  font-weight: bold; }
 
 
 p,
-h3 {
+h3,
+a {
   font-size: 1.3rem;
   line-height: 2.2rem;
-  margin: 0.5rem 0; }
+  margin: .5rem 0; }
 
 a {
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #232323;
   text-decoration: none; }
   a.arrow:after {
     display: inline-block;
     margin-left: 0.7rem;
     content: url("../images/arrow.svg"); }
+  a.white-arrow:after {
+    display: inline-block;
+    margin-left: 0.7rem;
+    content: url("../images/white-arrow.svg"); }
 
 /*
  * Header styles
@@ -237,6 +275,11 @@ a {
 /*
  * Footer styles
  */
+#sign-up {
+  background-color: #5baed6; }
+  #sign-up p, #sign-up h3, #sign-up a, #sign-up h2 {
+    color: #fff; }
+
 #footer {
   height: 10rem;
   background-color: #016696;
@@ -250,11 +293,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  #footer .container {
-    padding: 0 4rem; }
-  #footer p, #footer h3 {
+  #footer p, #footer h3, #footer a {
     color: #fff;
-    font-weight: bold; }
+    font-weight: 600; }
+
+.copyright-container {
+  padding: 0 4rem; }
 
 .design-logo img {
   height: 2.6rem;
@@ -263,23 +307,68 @@ a {
 /*
  * Home page
  */
+/****** HOME ******/
 .hero img {
   width: 100%; }
 
+/****** ABOUT ******/
 #about {
   background-color: #fce283; }
   #about h2 {
     color: #232323; }
 
-.speaker-card {
-  margin: 3rem 0 5rem; }
-
-.speaker-photo img {
-  width: 100%; }
-
-.speaker-info {
-  margin-top: 2rem; }
-  .speaker-info p, .speaker-info h3, .speaker-info h3 {
-    line-height: 1.9rem;
+/****** FAQ ******/
+.qa-container {
+  margin: 2rem 0; }
+  .qa-container p, .qa-container h3, .qa-container a {
     margin: 0;
     padding: 0; }
+
+.q {
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0.5rem; }
+
+.a {
+  display: none; }
+
+#speakers .card-text p, #speakers .card-text h3, #speakers .card-text a, #speakers .card-text h3 {
+  line-height: 2rem;
+  margin: 0;
+  padding: 0; }
+
+/****** SCHEDULE ******/
+#schedule p, #schedule h3, #schedule a {
+  margin: 0;
+  padding: 0; }
+
+.agenda {
+  margin-top: 2rem; }
+
+.agenda-item {
+  height: 100%;
+  padding: 0 0 1.6rem 3.8rem;
+  position: relative; }
+  .agenda-item:not(:last-child):before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: .45rem;
+    margin-top: 0.6rem;
+    height: 100%;
+    width: 0.3rem;
+    background-color: #fce283; }
+
+.agenda-time {
+  font-weight: 600; }
+  .agenda-time:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-top: 0.6rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 1rem;
+    border: 0.4rem solid #5baed6;
+    background-color: #fff; }

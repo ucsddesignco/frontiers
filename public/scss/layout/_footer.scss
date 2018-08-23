@@ -2,6 +2,13 @@
  * Footer styles
  */
 
+#sign-up {
+  background-color: $shakespeare;
+  p, h2 {
+    color: #fff;
+  }
+}
+
 #footer {
   height: 10rem;
   background-color: $bahama-blue;
@@ -9,14 +16,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .container {
-    padding: 0 $side-padding;
-  }
   p {
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
     //font-size: 1.1rem;
   }
+}
+
+.copyright-container {
+  padding: 0 $side-padding;
 }
 
 .design-logo {
