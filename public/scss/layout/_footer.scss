@@ -1,3 +1,27 @@
 /*
  * Footer styles
  */
+
+#footer {
+  height: 10rem;
+  background-color: $bahama-blue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    padding: 0 $side-padding;
+  }
+  p {
+    color: #fff;
+    font-weight: bold;
+    //font-size: 1.1rem;
+  }
+}
+
+.design-logo {
+  img {
+    height: 2.6rem;
+    margin-top: 1rem;
+  }
+}
