@@ -2,6 +2,8 @@
  * main.js
  */
 
+const lgScreen = 960;
+
 function highlightNav() {
   // Get current scroll position
   const position = $(this).scrollTop();
@@ -11,24 +13,25 @@ function highlightNav() {
     const targetid = "#" + $(this).text().toLowerCase();
     const target = $(targetid).offset().top + -150;
 
-    // Reset highlighting
-    $(this).removeClass('active');
 
-    // Highlight target
-    if (position >= target && position < target + $(targetid).height()) {
-      $(this).addClass('active');
-    }
 
     // Highlight Sign-Up if at bottom of page
     if (position >= $(document).height() - $(window).height()) {
       $('.nav-item').removeClass('active');
       $('.nav-item:last-child').addClass('active');
     }
-
     // Highlight Sponsors if near bottom of page
     else if (position >= $(document).height() - $(window).height() - 200) {
       $('.nav-item').removeClass('active');
       $('.nav-item:nth-last-child(2)').addClass('active');
+    }
+    // Highlight target
+    else if (position >= target && position < target + $(targetid).height()) {
+      $(this).addClass('active');
+    }
+    else {
+      // Reset highlighting
+      $(this).removeClass('active');
     }
   });
 }
@@ -41,20 +44,43 @@ var main = function() {
 
   /* FAQ DRAWER TOGGLE */
   $('.q').click(function() {
-    $(this).closest('.qa-container').find('.a').slideToggle(300);
+    $(this).closest('.faq-item').find('.a').slideToggle(300);
     $(this).toggleClass('active');
   });
 
   /* NAV ITEM CLICK ACTION */
   $(".nav-item").click(function() {
+    // Determine offsets
+    let offset;
+    let lastChildOffset;
+    if ($(window).width() < lgScreen) {
+      offset = -70;
+      lastChildOffset = -400;
+    }
+    else {
+      offset = 5;
+      lastChildOffset = -200;
+    }
+
     const dest = "#" + $(this).text().toLowerCase();
 
-    $hamburger.toggleClass("is-active");
-    $(".nav-drawer").fadeToggle(200);
+    // Only fade out menu if mobile
+    if ($(window).width() < lgScreen) {
+      $hamburger.toggleClass("is-active");
+      $(".nav-drawer").fadeToggle(200);
+    }
 
-   $('html, body').animate({
-      scrollTop: $(dest).offset().top + -70
-   }, 500);
+    // Don't scroll to bottom if dest = Sponsors
+    if (dest == "#sponsors") {
+      $('html, body').animate({
+         scrollTop: $(dest).offset().top + lastChildOffset
+      }, 500);
+    }
+    else {
+      $('html, body').animate({
+        scrollTop: $(dest).offset().top + offset
+      }, 500);
+    }
   });
 
   /* HIGHLIGHT ACTIVE MENU ITEM */

@@ -5,3 +5,29 @@
 .no-scroll {
   position: fixed;
 }
+
+.bleed-right {
+  margin-right: -$side-padding;
+  @include md-up {
+    margin-right: -$side-padding-md;
+  }
+  @include lg-up {
+    margin-right: -$padding-right-lg;
+  }
+  @include xl-up {
+    margin-right: -$padding-right-xl;
+  }
+}
+
+.collapse {
+  @include md-up {
+    display: none;
+  }
+}
+
+.expand {
+  display: none;
+  @include md-up {
+    display: inline-block;
+  }
+}

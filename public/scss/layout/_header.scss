@@ -7,10 +7,10 @@
   position: fixed;
   top: 0;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 999;
 }
 
-#nav-mobile {
+#nav {
   height: 100%;
   .nav-container {
     position: relative;
@@ -20,10 +20,13 @@
   .nav-bar {
     height: $header-height;
     width: 100%;
-    box-shadow: 0 1rem 5rem 0 rgba(0,0,0, 0.05);
+    box-shadow: 0 1rem 6rem 0 rgba(0,0,0, 0.04);
     display: flex;
     align-items: center;
     justify-content: center;
+    @include lg-up {
+      display: none;
+    }
   }
   .nav-drawer {
     text-align: center;
@@ -32,6 +35,16 @@
     height: calc(100vh - #{$header-height});
     background-color: #fff;
     display: none;
+    @include lg-up {
+      display: block;
+      position: fixed;
+      left: 0;
+      height: 100vh;
+      z-index: 9999;
+      width: 15rem;
+      text-align: left;
+      background-color: rgba(255,255,255, 0.85);
+    }
   }
   .nav-item-wrapper {
     height: 100%;
@@ -39,6 +52,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include md-up {
+      flex-direction: column;
+      //align-items: flex-start;
+    }
   }
   .nav-item {
     margin: 1.5rem 0;
@@ -47,6 +64,7 @@
       font-weight: 600;
       text-decoration: none;
       color: $mine-shaft;
+      transition: .3s;
     }
     &.active {
       a {
@@ -57,11 +75,27 @@
   .menu {
     position: absolute;
     left: $side-padding;
-  }
-  .logo {
-    img {
-      height: 3.6rem;
+    @include md-up {
+      left: $side-padding-md;
     }
+  }
+}
+
+.logo {
+  img {
+    height: 3.6rem;
+  }
+}
+
+.logo-desktop {
+  display: none;
+  @include md-up {
+    display: inline-block;
+  }
+  img {
+    height: 4rem;
+    margin-left: -2.2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -74,9 +108,4 @@
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-}
-
-
-#nav {
-
 }

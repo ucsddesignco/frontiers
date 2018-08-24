@@ -19,16 +19,28 @@
   p, a {
     color: #fff;
     font-weight: 600;
+    @include md-up {
+      margin-top: 1.1rem;
+    }
   }
-}
-
-.copyright-container {
-  padding: 0 $side-padding;
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    @include md-up {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .design-logo {
   img {
     height: 2.6rem;
     margin-top: 1rem;
+    @include md-up {
+      margin-top: 0.6rem;
+      height: 3.7rem;
+    }
   }
 }

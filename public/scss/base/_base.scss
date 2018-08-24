@@ -4,6 +4,9 @@
 html {
   font-size: 62.5%;
   position: relative;
+  @include xxl-up {
+    font-size: 0.7vw;
+  }
 }
 
 body {
@@ -12,6 +15,17 @@ body {
 
 .container {
   padding: 5rem $side-padding;
+  @include md-up {
+    padding: 8rem $side-padding-md;
+  }
+  @include lg-up {
+    padding-left: $padding-left-lg;
+    padding-right: $padding-right-lg;
+  }
+  @include xl-up {
+    padding-left: $padding-left-xl;
+    padding-right: $padding-right-xl;
+  }
 }
 
 .container-sm {
@@ -19,9 +33,9 @@ body {
 }
 
 .card {
-  margin: 3rem 0 5rem;
+  margin-bottom: 5rem;
   &:last-child {
-    margin: 3rem 0 0;
+    margin-bottom: 0;
   }
 }
 

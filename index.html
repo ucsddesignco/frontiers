@@ -37,7 +37,7 @@
 <body>
   <div id="header">
 
-    <div id="nav-mobile">
+    <div id="nav">
       <div class="nav-container">
 
         <div class="nav-bar">
@@ -55,7 +55,13 @@
         </div>
 
         <div class="nav-drawer">
+
           <div class="nav-item-wrapper">
+
+            <div class="logo-desktop">
+              <a href="/"><img src="/public/images/logo.svg"></a>
+            </div>
+
             <ul>
               <li class="nav-item"><a href="#home">Home</a></li>
               <li class="nav-item"><a href="#about">About</a></li>
@@ -70,186 +76,237 @@
         </div>
 
       </div>
-    </div> <!-- /.nav-mobile -->
+    </div> <!-- /#nav -->
 
-    <div id="nav-desktop"></div>
   </div>
 
   <div id="home">
     <div class="hero">
-      <img src="/public/images/hero.jpg">
+    <!--  <img src="/public/images/hero.jpg"> -->
     </div>
     <div class="container">
-      <h1>Design Frontiers</h1>
-      <p>Design sprints and lightning talks focusing on applying human-centered design to different fields and industries.</p>
-      <p><a class="arrow" href="/">Sign Up</a></p>
+
+      <div class="hero-desktop">
+        <img src="/public/images/hero.jpg">
+      </div>
+
+      <div>
+        <h1>Design Frontiers</h1>
+        <p class="caption">Design sprints and lightning talks focusing on applying human-centered design to different fields and industries.</p>
+        <p><a class="arrow" href="/">Sign Up</a></p>
+      </div>
+
     </div>
   </div>
 
   <div id="about">
     <div class="container">
-      <h2>About</h2>
-      <p>Design Frontiers is an event consisting of a design sprint and accompanying lightning talks. The event will increase cross collaboration of students across multiple disciplines and show UC San Diego students, through a hands-on experience, how design thinking can apply to various fields. Our goal is to focus on design beyond UX and product design. This quarter we will focus on the field of healthcare.</p>
+
+      <div>
+        <h2>About</h2>
+        <p>Design Frontiers is an event consisting of a design sprint and accompanying lightning talks. The event will increase cross collaboration of students across multiple disciplines and show UC San Diego students, through a hands-on experience, how design thinking can apply to various fields. Our goal is to focus on design beyond UX and product design. This quarter we will focus on the field of healthcare.</p>
+      </div>
+
     </div>
+
+      <div class="about-img blee-right">
+        <!-- <img src="/public/images/about.jpg"> -->
+      </div>
+
+
   </div>
 
   <div id="speakers">
     <div class="container">
       <h2>Speakers</h2>
 
-      <div class="card">
-        <div class="card-img">
-          <img src="/public/images/kaila.jpg">
-        </div>
-        <div class="card-text">
-          <h3>Jessica Kwen</h3>
-          <p>Human Factors Engineer<br>Illumina</p>
-        </div>
-      </div> <!-- /.card -->
+      <div class="card-container">
 
-      <div class="card">
-        <div class="card-img">
-          <img src="/public/images/kaila.jpg">
-        </div>
-        <div class="card-text">
-          <h3>Jessica Kwen</h3>
-          <p>Human Factors Engineer<br>Illumina</p>
-        </div>
-      </div> <!-- /.card -->
+        <div class="card">
+          <div class="card-img">
+            <img src="/public/images/kaila.jpg">
+          </div>
+          <div class="card-text">
+            <h3>Jessica Kwen</h3>
+            <p class="caption">Human Factors Engineer<br>Illumina</p>
+          </div>
+        </div> <!-- /.card -->
 
-      <div class="card">
-        <div class="card-img">
-          <img src="/public/images/kaila.jpg">
-        </div>
-        <div class="card-text">
-          <h3>Jessica Kwen</h3>
-          <p>Human Factors Engineer<br>Illumina</p>
-        </div>
-      </div> <!-- /.card -->
+        <div class="card">
+          <div class="card-img">
+            <img src="/public/images/kaila.jpg">
+          </div>
+          <div class="card-text">
+            <h3>Jessica Kwen</h3>
+            <p class="caption">Human Factors Engineer<br>Illumina</p>
+          </div>
+        </div> <!-- /.card -->
+
+        <div class="card">
+          <div class="card-img">
+            <img src="/public/images/kaila.jpg">
+          </div>
+          <div class="card-text">
+            <h3>Jessica Kwen</h3>
+            <p class="caption">Human Factors Engineer<br>Illumina</p>
+          </div>
+        </div> <!-- /.card -->
+
+      </div>  <!-- /.card-container -->
 
     </div>
   </div>
 
   <div id="schedule">
-    <div class="container-sm">
+    <div class="container">
+      <div class="agenda-info">
+
       <h2>Schedule</h2>
 
-      <div class="agenda">
 
-        <div class="agenda-item">
-          <p class="agenda-time">10:00am</p>
-          <p>Check-In</p>
-        </div>
-        <div class="agenda-item">
-          <p class="agenda-time">11:00am</p>
-          <p>Introduction and Overview of Agenda</p>
-        </div>
-        <div class="agenda-item">
-          <p class="agenda-time">11:30am</p>
-          <p>Introduction of the Human-Centered Design Process in Healthcare</p>
-        </div>
-        <div class="agenda-item">
-          <p class="agenda-time">12:00pm</p>
-          <p>Lunch</p>
-        </div>
-        <div class="agenda-item">
-          <p class="agenda-time">1:00pm</p>
-          <p>Intro to Human-Centered Design</p>
-        </div>
-        <div class="agenda-item">
-          <p class="agenda-time">1:30pm</p>
-          <p>Design Sprint</p>
-        </div>
-        <div class="agenda-item">
-          <p class="agenda-time">2:45pm</p>
-          <p>Break and Networking Session</p>
-        </div>
-        <div class="agenda-item">
-          <p class="agenda-time">3:00pm</p>
-          <p>Design Sprint</p>
-        </div>
-        <div class="agenda-item">
-          <p class="agenda-time">5:00pm</p>
-          <p>Presentations, Feedback and Closing</p>
-        </div>
+        <div class="agenda">
 
-      </div> <!-- /.agenda -->
+          <div class="agenda-item">
+            <p class="agenda-time">10:00am</p>
+            <p>Check-In</p>
+          </div>
+          <div class="agenda-item">
+            <p class="agenda-time">11:00am</p>
+            <p>Introduction and Overview of Agenda</p>
+          </div>
+          <div class="agenda-item">
+            <p class="agenda-time">11:30am</p>
+            <p>Introduction of the Human-Centered Design Process in Healthcare</p>
+          </div>
+          <div class="agenda-item">
+            <p class="agenda-time">12:00pm</p>
+            <p>Lunch</p>
+          </div>
+          <div class="agenda-item">
+            <p class="agenda-time">1:00pm</p>
+            <p>Intro to Human-Centered Design</p>
+          </div>
+          <div class="agenda-item">
+            <p class="agenda-time">1:30pm</p>
+            <p>Design Sprint</p>
+          </div>
+          <div class="agenda-item">
+            <p class="agenda-time">2:45pm</p>
+            <p>Break and Networking Session</p>
+          </div>
+          <div class="agenda-item">
+            <p class="agenda-time">3:00pm</p>
+            <p>Design Sprint</p>
+          </div>
+          <div class="agenda-item">
+            <p class="agenda-time">5:00pm</p>
+            <p>Presentations, Feedback and Closing</p>
+          </div>
 
+        </div> <!-- /.agenda -->
 
+      </div> <!-- /.agenda-info -->
+
+      <div class="agenda-photo bleed-right">
+        <img src="/public/images/placeholder.jpg">
+      </div>
 
     </div>
   </div>
 
   <div id="faq">
-    <div class="container-sm">
-      <h2>FAQ</h2>
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
 
-      <div class="qa-container">
-        <div class="q">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</p>
+      <div id="faq-container">
+        <div class="faq-item">
+          <div class="q">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</p>
+          </div>
+          <div class="a">
+            <p>Aenean euismod elementum nisi quis.</p>
+          </div>
         </div>
-        <div class="a">
-          <p>Aenean euismod elementum nisi quis.</p>
-        </div>
-      </div>
 
-      <div class="qa-container">
-        <div class="q">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</p>
+        <div class="faq-item">
+          <div class="q">
+            <p>Quo probatus petentium ad, utroque quaestio an nam?</p>
+          </div>
+          <div class="a">
+            <p>Altera probatus tractatos quo at, pri populo consulatu dignissim et, voluptua mandamus molestiae mei no.</p>
+          </div>
         </div>
-        <div class="a">
-          <p>Aenean euismod elementum nisi quis.</p>
-        </div>
-      </div>
 
-      <div class="qa-container">
-        <div class="q">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</p>
+        <div class="faq-item">
+          <div class="q">
+            <p>Duo minimum aliquando adversarium at, nominavi perpetua cotidieque eam eu?</p>
+          </div>
+          <div class="a">
+            <p>Cum veri putant tamquam at.</p>
+          </div>
         </div>
-        <div class="a">
-          <p>Aenean euismod elementum nisi quis.</p>
+
+        <div class="faq-item">
+          <div class="q">
+            <p>An facer mollis liberavisse vis?</p>
+          </div>
+          <div class="a">
+            <p>Mea cu omnis offendit maiestatis, debet erroribus eloquentiam nec an, ad eam latine inermis.</p>
+          </div>
         </div>
-      </div>
+
+        <div class="faq-item">
+          <div class="q">
+            <p>Mei malis ignota similique eu, meliore fastidii te eos, in eos labitur eruditi?</p>
+          </div>
+          <div class="a">
+            <p>Mea essent convenire at. Iuvaret scribentur cum ut.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="q">
+            <p>No mel aliquid veritus, mazim putent vim ad. Ex has sanctus electram percipitur, case vero cu sea, ius ea feugait fuisset tractatos?</p>
+          </div>
+          <div class="a">
+            <p>Detracto perfecto lobortis sit eu. Ut vim dicam suavitate necessitatibus.</p>
+          </div>
+        </div>
+
+      </div> <!-- /.faq-container -->
 
     </div>
   </div>
 
   <div id="oldies">
-    <div class="container-sm">
+    <div class="container">
       <h2>Oldies</h2>
 
-      <div class="card">
-        <div class="card-img">
-          <img src="/public/images/kaila.jpg">
-        </div>
-        <div class="card-text">
-          <h3>Spring 2018, Illumina</h3>
-          <p>We had Illumina come out for a design sprint on a lovely Sunday. Thank you so much Illumina!</p>
-          <p><a class="arrow" href="/">Learn More</a></p>
-        </div>
-      </div> <!-- /.card -->
+      <div class="card-container">
 
-      <div class="card">
-        <div class="card-img">
-          <img src="/public/images/kaila.jpg">
-        </div>
-        <div class="card-text">
-          <h3>Spring 2018, Illumina</h3>
-          <p>We had Illumina come out for a design sprint on a lovely Sunday. Thank you so much Illumina!</p>
-          <p><a class="arrow" href="/">Learn More</a></p>
-        </div>
-      </div> <!-- /.card -->
+        <div class="card">
+          <div class="card-img">
+            <img src="/public/images/kaila.jpg">
+          </div>
+          <div class="card-text">
+            <h3>Spring 2018, Illumina</h3>
+            <p>We had Illumina come out for a design sprint on a lovely Sunday. Thank you so much Illumina!</p>
+            <p><a class="arrow" href="/">Learn More</a></p>
+          </div>
+        </div> <!-- /.card -->
 
-      <div class="card">
-        <div class="card-img">
-          <img src="/public/images/kaila.jpg">
-        </div>
-        <div class="card-text">
-          <h3>Spring 2018, Illumina</h3>
-          <p>We had Illumina come out for a design sprint on a lovely Sunday. Thank you so much Illumina!</p>
-          <p><a class="arrow" href="/">Learn More</a></p>
-        </div>
-      </div> <!-- /.card -->
+        <div class="card">
+          <div class="card-img">
+            <img src="/public/images/kaila.jpg">
+          </div>
+          <div class="card-text">
+            <h3>Spring 2018, Illumina</h3>
+            <p>We had Illumina come out for a design sprint on a lovely Sunday. Thank you so much Illumina!</p>
+            <p><a class="arrow" href="/">Learn More</a></p>
+          </div>
+        </div> <!-- /.card -->
+
+      </div> <!-- /.card-container -->
 
     </div>
   </div>
@@ -263,15 +320,15 @@
   <div id="sign-up">
     <div class="container">
       <h2>Join us at Design Frontiers</h2>
-      <p>November 18, 2018</p>
+      <p class="caption">November 18, 2018</p>
       <p><a class="white-arrow" href="/">Sign Up</a></p>
     </div>
   </div>
 
   <div id="footer">
-    <div class="copyright-container">
+    <div class="container">
       <div class="design-logo">
-        <img src="/public/images/d@u-logo.svg">
+        <a href="https://designatucsd.org/" target="_blank"><img src="/public/images/d@u-logo.svg"></a>
       </div>
       <p>© Design at UCSD. All Rights Reserved</p>
     </div>
