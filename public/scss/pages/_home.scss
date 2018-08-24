@@ -4,6 +4,10 @@
 
 /****** HOME ******/
 
+#home {
+  margin-top: $header-height;
+}
+
 .hero {
   img {
     width: 100%;
@@ -21,8 +25,15 @@
 
 /****** FAQ ******/
 
+#faq {
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
 .qa-container {
-  margin: 2rem 0;
+  padding: 1rem 0;
+  position: relative;
+  padding-left: 2.2rem;
   p {
     margin: 0;
     padding: 0;
@@ -33,12 +44,29 @@
   cursor: pointer;
   font-weight: 600;
   margin-bottom: 0.5rem;
+
+  &:before {
+    transition: .3s;
+    content: "✖";
+    position: absolute;
+    font-size: 1.3rem;
+    color: $ronchi;
+    left: 0;
+    margin-top: 0.5rem;
+    transform: rotate(45deg);
+  }
+  &.active:before {
+    color: $shakespeare;
+    transform: rotate(180deg)
+  }
 }
 
 .a {
   display: none;
 
 }
+
+/****** SPEAKERS ******/
 
 #speakers {
   .card-text {

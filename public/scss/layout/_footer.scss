@@ -4,7 +4,7 @@
 
 #sign-up {
   background-color: $shakespeare;
-  p, h2 {
+  p, h2, a {
     color: #fff;
   }
 }
@@ -16,10 +16,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  p {
+  p, a {
     color: #fff;
     font-weight: 600;
-    //font-size: 1.1rem;
   }
 }
 

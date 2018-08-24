@@ -2,7 +2,6 @@
  * Helpers
  */
 
-.full-width {
-  margin-left: -$side-padding;
-  width: 100vw;
+.no-scroll {
+  position: fixed;
 }
