@@ -492,7 +492,7 @@ p a, h3 a {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.94);
   z-index: 999; }
 
 #nav {
@@ -504,8 +504,6 @@ p a, h3 a {
   #nav .nav-bar {
     height: 7.5rem;
     width: 100%;
-    -webkit-box-shadow: 0 1rem 6rem 0 rgba(0, 0, 0, 0.04);
-            box-shadow: 0 1rem 6rem 0 rgba(0, 0, 0, 0.04);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -523,7 +521,7 @@ p a, h3 a {
     width: 100%;
     position: absolute;
     height: calc(100vh - 7.5rem);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.94);
     display: none; }
     @media (min-width: 960px) {
       #nav .nav-drawer {
@@ -534,7 +532,7 @@ p a, h3 a {
         z-index: 9999;
         width: 15rem;
         text-align: left;
-        background-color: rgba(255, 255, 255, 0.85); } }
+        background-color: rgba(255, 255, 255, 0.88); } }
   #nav .nav-item-wrapper {
     height: 100%;
     margin-top: -2rem;
@@ -576,23 +574,13 @@ p a, h3 a {
 
 .logo-desktop {
   display: none; }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .logo-desktop {
       display: inline-block; } }
   .logo-desktop img {
     height: 4rem;
     margin-left: -2.2rem;
     margin-bottom: 1.5rem; }
-
-.menu-overlay {
-  display: none;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.96);
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1000; }
 
 /*
  * Footer styles

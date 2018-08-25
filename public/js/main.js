@@ -13,8 +13,6 @@ function highlightNav() {
     const targetid = "#" + $(this).text().toLowerCase();
     const target = $(targetid).offset().top + -150;
 
-
-
     // Highlight Sign-Up if at bottom of page
     if (position >= $(document).height() - $(window).height()) {
       $('.nav-item').removeClass('active');
@@ -86,6 +84,12 @@ var main = function() {
   /* HIGHLIGHT ACTIVE MENU ITEM */
   $(window).scroll(function() {
     highlightNav();
+  });
+
+  /* Ensure menu is showing on desktop */
+  $(window).resize(function() {
+    if ($(window).width() >= lgScreen)
+      $(".nav-drawer").show();
   });
 
   /* HAMBURGER MENU */

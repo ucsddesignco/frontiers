@@ -6,7 +6,8 @@
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #fff;
+  //background-color: #fff;
+  background-color: rgba(255,255,255,0.94);
   z-index: 999;
 }
 
@@ -20,7 +21,7 @@
   .nav-bar {
     height: $header-height;
     width: 100%;
-    box-shadow: 0 1rem 6rem 0 rgba(0,0,0, 0.04);
+    //box-shadow: 0 1rem 6rem 0 rgba(0,0,0, 0.04);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +34,8 @@
     width: 100%;
     position: absolute;
     height: calc(100vh - #{$header-height});
-    background-color: #fff;
+    //background-color: #fff;
+    background-color: rgba(255,255,255,0.94);
     display: none;
     @include lg-up {
       display: block;
@@ -43,7 +45,7 @@
       z-index: 9999;
       width: 15rem;
       text-align: left;
-      background-color: rgba(255,255,255, 0.85);
+      background-color: rgba(255,255,255, 0.88);
     }
   }
   .nav-item-wrapper {
@@ -54,7 +56,6 @@
     justify-content: center;
     @include md-up {
       flex-direction: column;
-      //align-items: flex-start;
     }
   }
   .nav-item {
@@ -89,7 +90,7 @@
 
 .logo-desktop {
   display: none;
-  @include md-up {
+  @include lg-up {
     display: inline-block;
   }
   img {
@@ -97,15 +98,4 @@
     margin-left: -2.2rem;
     margin-bottom: 1.5rem;
   }
-}
-
-.menu-overlay {
-  display: none;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.96);
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1000;
 }
