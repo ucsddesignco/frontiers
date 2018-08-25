@@ -68,17 +68,30 @@ p a {
   color: $mine-shaft;
   text-decoration: none;
   &.arrow {
-    &:after {
-      display: inline-block;
-      margin-left: 0.7rem;
-      content: url("../images/arrow.svg");
+    svg {
+      margin-left: 0.8rem;
+      width: 2rem;
+      height: 0.8rem;
+      transition: width .3s;
+      overflow: visible;
+      @include hover {
+        width: 3rem;
+      }
+    }
+    marker {
+      fill: $ronchi;
+    }
+    line {
+      stroke: $ronchi;
+      stroke-width: 0.2rem;
     }
   }
-  &.white-arrow {
-    &:after {
-      display: inline-block;
-      margin-left: 0.7rem;
-      content: url("../images/white-arrow.svg");
+  &.arrow-white {
+    marker {
+      //fill: #fff;
+    }
+    line {
+      //stroke: #fff;
     }
   }
 }

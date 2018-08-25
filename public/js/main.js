@@ -38,7 +38,20 @@ function highlightNav() {
  * Main function
  */
 var main = function() {
+
   highlightNav();
+
+  $('.arrow').each(function() {
+    $(this).append($('<span></span>').load('/public/images/arrow.html'));
+
+  });
+
+  $('.arrow').hover(function() {
+    $(this).parent().find('svg').css('width', '3rem');
+  }, function() {
+    $(this).parent().find('svg').css('width', '2rem');
+  });
+
 
   /* FAQ DRAWER TOGGLE */
   $('.q').click(function() {
@@ -65,7 +78,7 @@ var main = function() {
     // Only fade out menu if mobile
     if ($(window).width() < lgScreen) {
       $hamburger.toggleClass("is-active");
-      $(".nav-drawer").fadeToggle(200);
+      $(".nav-drawer-mobile").fadeToggle(200);
     }
 
     // Don't scroll to bottom if dest = Sponsors
@@ -88,8 +101,14 @@ var main = function() {
 
   /* Ensure menu is showing on desktop */
   $(window).resize(function() {
-    if ($(window).width() >= lgScreen)
-      $(".nav-drawer").show();
+    if ($(window).width() >= lgScreen) {
+      if ($hamburger.hasClass("is-active")) {
+        // Toggle hamburger open/close
+        $hamburger.toggleClass("is-active");
+        // Toggle menu
+        $(".nav-drawer-mobile").hide();
+    }
+  }
   });
 
   /* HAMBURGER MENU */
@@ -100,12 +119,12 @@ var main = function() {
       // Toggle hamburger open/close
       $hamburger.toggleClass("is-active");
       // Toggle menu
-      $(".nav-drawer").slideToggle(400);
+      $(".nav-drawer-mobile").slideToggle(400);
     } else {
       // Toggle hamburger open/close
       $hamburger.toggleClass("is-active");
       // Toggle menu
-      $(".nav-drawer").slideToggle(400);
+      $(".nav-drawer-mobile").slideToggle(400);
     }
   });
 
