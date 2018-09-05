@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
  * Breakpoints
  */
@@ -372,7 +371,10 @@ body {
   width: 100%; }
 
 .card-text {
-  margin-top: 2rem; }
+  margin-top: 1.5rem; }
+  @media (min-width: 840px) {
+    .card-text {
+      margin-top: 2.5rem; } }
 
 /*
  * @font-face declarations
@@ -461,7 +463,7 @@ p a {
       font-size: 1.7rem;
       line-height: 2.8rem;
       margin: 1rem 0; }
-      p.caption, h3.caption, p a.caption {
+      p.subhead, h3.subhead, p a.subhead {
         font-size: 2.3rem;
         line-height: 3.8rem; } }
 
@@ -755,22 +757,25 @@ p a, h3 a {
   .q:before {
     -webkit-transition: .3s;
     transition: .3s;
-    content: "✖";
+    content: "\d7";
     position: absolute;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     color: #EDC945;
     left: 0;
-    margin-top: 0.5rem;
+    margin-top: -0.1rem;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
     @media (min-width: 840px) {
       .q:before {
-        font-size: 2.4rem;
-        margin-top: 0.4rem; } }
+        font-size: 3rem; } }
   .q.active:before {
     color: #5baed6;
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
+            transform: rotate(180deg);
+    margin-top: 0.15rem; }
+    @media (min-width: 840px) {
+      .q.active:before {
+        margin-top: 0; } }
 
 .a {
   display: none; }
@@ -802,15 +807,6 @@ p a, h3 a {
 
 #speakers .card-text {
   padding: 0 0.2rem; }
-  #speakers .card-text p, #speakers .card-text h3, #speakers .card-text p a, p #speakers .card-text a, #speakers .card-text h3 {
-    margin: 0;
-    padding: 0; }
-    @media (min-width: 840px) {
-      #speakers .card-text p, #speakers .card-text h3, #speakers .card-text p a, p #speakers .card-text a, #speakers .card-text h3 {
-        line-height: 3.2rem; } }
-  @media (min-width: 960px) {
-    #speakers .card-text {
-      margin-top: 3rem; } }
 
 /****** SCHEDULE ******/
 #schedule p, #schedule h3, #schedule p a, p #schedule a {
@@ -891,10 +887,6 @@ p a, h3 a {
     padding-right: 3rem; }
   #oldies .card:nth-child(even) {
     padding-left: 3rem; } }
-
-@media (min-width: 840px) {
-  #oldies .card-text {
-    margin-top: 4rem; } }
 
 #sign-up h2 {
   padding-bottom: 0; }

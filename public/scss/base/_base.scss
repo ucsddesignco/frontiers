@@ -46,5 +46,8 @@ body {
 }
 
 .card-text {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  @include md-up {
+      margin-top: 2.5rem;
+  }
 }

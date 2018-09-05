@@ -146,27 +146,32 @@
   }
 }
 
+$offset: .5rem;
+$offsethalf: .25rem;
 .q {
   cursor: pointer;
   font-weight: 600;
   margin-bottom: 0.5rem;
   &:before {
     transition: .3s;
-    content: "✖";
+    content: "\d7";
     position: absolute;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     color: $ronchi;
     left: 0;
-    margin-top: 0.5rem;
+    margin-top: -0.1rem;
     transform: rotate(45deg);
     @include md-up {
-      font-size: 2.4rem;
-      margin-top: 0.4rem;
+      font-size: 3rem;
     }
   }
   &.active:before {
     color: $shakespeare;
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    margin-top: 0.15rem;
+    @include md-up {
+      margin-top: 0;
+    }
   }
 }
 .a {
@@ -200,16 +205,6 @@
   }
   .card-text {
     padding: 0 0.2rem;
-    p, h3 {
-      margin: 0;
-      padding: 0;
-      @include md-up {
-        line-height: 3.2rem;
-      }
-    }
-    @include lg-up {
-      margin-top: 3rem;
-    }
   }
 }
 
@@ -311,11 +306,6 @@
       &:nth-child(even) {
         padding-left: 3rem;
       }
-    }
-  }
-  .card-text {
-    @include md-up {
-      margin-top: 4rem;
     }
   }
 }
