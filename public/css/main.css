@@ -755,6 +755,7 @@ p a, h3 a {
   font-weight: 600;
   margin-bottom: 0.5rem; }
   .q:before {
+    line-height: 0;
     -webkit-transition: .3s;
     transition: .3s;
     content: "\d7";
@@ -762,20 +763,19 @@ p a, h3 a {
     font-size: 2.3rem;
     color: #EDC945;
     left: 0;
-    margin-top: -0.1rem;
+    margin-top: 1.1rem;
+    -webkit-transform-origin: center 0.1rem;
+            transform-origin: center 0.1rem;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
     @media (min-width: 840px) {
       .q:before {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        margin-top: 1.4rem; } }
   .q.active:before {
     color: #5baed6;
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    margin-top: 0.15rem; }
-    @media (min-width: 840px) {
-      .q.active:before {
-        margin-top: 0; } }
+            transform: rotate(180deg); }
 
 .a {
   display: none; }
