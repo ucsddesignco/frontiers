@@ -8,10 +8,6 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3, p {
-  //transition: .3s;
-}
-
 h1, h2, h3 {
   font-weight: 700;
 }
@@ -46,7 +42,7 @@ h3 {
   }
 }
 
-p {
+p, li {
   font-size: 1.3rem;
   line-height: 2.2rem;
   margin: .5rem 0;
@@ -59,6 +55,25 @@ p {
       line-height: 3.8rem;
     }
   }
+}
+
+#faq ul {
+  list-style-type: disc;
+  padding-left: 3rem;
+  //list-style-position: inside;
+}
+
+#faq ul, #faq li {
+  //padding: 0;
+  margin: 0;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+i {
+  font-style: italic;
 }
 
 p a {

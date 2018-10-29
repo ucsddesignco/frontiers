@@ -10,7 +10,7 @@ function highlightNav() {
 
   // Compare current scroll position with position of each section
   $('.nav-item').each(function() {
-    const targetid = "#" + $(this).text().toLowerCase();
+    const targetid = "#" + $(this).text().replace(/\s+/g, '-').toLowerCase();
     const target = $(targetid).offset().top + -150;
 
     // Highlight Sign-Up if at bottom of page
@@ -18,7 +18,7 @@ function highlightNav() {
       $('.nav-item').removeClass('active');
       $('.nav-item:last-child').addClass('active');
     }
-    // Highlight Sponsors if near bottom of page
+    // Highlight Partners if near bottom of page
     else if (position >= $(document).height() - $(window).height() - 200) {
       $('.nav-item').removeClass('active');
       $('.nav-item:nth-last-child(2)').addClass('active');
@@ -73,7 +73,7 @@ var main = function() {
       lastChildOffset = -200;
     }
 
-    const dest = "#" + $(this).text().toLowerCase();
+    const dest = "#" + $(this).text().replace(/\s+/g, '-').toLowerCase();
 
     // Only fade out menu if mobile
     if ($(window).width() < lgScreen) {
@@ -81,8 +81,8 @@ var main = function() {
       $(".nav-drawer-mobile").fadeToggle(200);
     }
 
-    // Don't scroll to bottom if dest = Sponsors
-    if (dest == "#sponsors") {
+    // Don't scroll to bottom if dest = Partners
+    if (dest == "#partners") {
       $('html, body').animate({
          scrollTop: $(dest).offset().top + lastChildOffset
       }, 500);

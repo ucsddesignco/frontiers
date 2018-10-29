@@ -2,7 +2,7 @@
  * Home page
  */
 
- #speakers, #schedule, #faq, #oldies {
+ #speakers, #schedule, #faq, #a-look-back {
    .container {
      padding-bottom: 0rem;
      @include md-up {
@@ -280,9 +280,9 @@ $offsethalf: .25rem;
   }
 }
 
-/****** OLDIES ******/
+/****** A LOOK BACK ******/
 
-#oldies {
+#a-look-back {
   .card-container {
     @include sm-up {
       display: grid;
@@ -305,6 +305,27 @@ $offsethalf: .25rem;
       &:nth-child(even) {
         padding-left: 3rem;
       }
+    }
+  }
+}
+
+/******* PARTNERS *******/
+.partner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  @include md-up {
+    grid-gap: 6rem;
+  }
+  img {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5rem;
+    @include md-up {
+      width: 100%;
+      padding: 3rem;
     }
   }
 }

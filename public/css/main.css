@@ -393,17 +393,6 @@ body {
   font-weight: 600;
   font-style: normal; }
 
-/*
-@font-face {
-  font-family: 'Filson Pro';
-  src: url('../fonts/filson_pro_regular-webfont.eot');
-  src: url('../fonts/filson_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/filson_pro_regular-webfont.woff2') format('woff2'),
-        url('../fonts/filson_pro_regular-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-*/
 @font-face {
   font-family: 'Filson Pro';
   src: url("../fonts/filson_pro_book-webfont.eot");
@@ -451,7 +440,7 @@ h2 {
 
 p,
 h3,
-p a {
+p a, li {
   font-size: 1.3rem;
   line-height: 2.2rem;
   margin: .5rem 0; }
@@ -459,13 +448,26 @@ p a {
     
     p,
     h3,
-    p a {
+    p a, li {
       font-size: 1.7rem;
       line-height: 2.8rem;
       margin: 1rem 0; }
-      p.subhead, h3.subhead, p a.subhead {
+      p.subhead, h3.subhead, p a.subhead, li.subhead {
         font-size: 2.3rem;
         line-height: 3.8rem; } }
+
+#faq ul {
+  list-style-type: disc;
+  padding-left: 3rem; }
+
+#faq ul, #faq li {
+  margin: 0; }
+
+strong, b {
+  font-weight: 600; }
+
+i {
+  font-style: italic; }
 
 p a, h3 a {
   font-weight: 600;
@@ -566,6 +568,9 @@ p a, h3 a {
       transition: .3s; }
     #nav .nav-item.active a {
       color: #5baed6; }
+    @media (hover: hover) {
+      #nav .nav-item:hover a {
+        color: #5baed6; } }
   #nav .menu {
     position: absolute;
     left: 10vw; }
@@ -637,10 +642,10 @@ p a, h3 a {
 /*
  * Home page
  */
-#speakers .container, #schedule .container, #faq .container, #oldies .container {
+#speakers .container, #schedule .container, #faq .container, #a-look-back .container {
   padding-bottom: 0rem; }
   @media (min-width: 840px) {
-    #speakers .container, #schedule .container, #faq .container, #oldies .container {
+    #speakers .container, #schedule .container, #faq .container, #a-look-back .container {
       padding-bottom: 1rem; } }
 
 /****** HOME ******/
@@ -870,23 +875,43 @@ p a, h3 a {
     .agenda-photo {
       display: inline-block; } }
 
-/****** OLDIES ******/
+/****** A LOOK BACK ******/
 @media (min-width: 600px) {
-  #oldies .card-container {
+  #a-look-back .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr; } }
 
 @media (min-width: 600px) {
-  #oldies .card:nth-child(odd) {
+  #a-look-back .card:nth-child(odd) {
     padding-right: 1.2rem; }
-  #oldies .card:nth-child(even) {
+  #a-look-back .card:nth-child(even) {
     padding-left: 1.2rem; } }
 
 @media (min-width: 840px) {
-  #oldies .card:nth-child(odd) {
+  #a-look-back .card:nth-child(odd) {
     padding-right: 3rem; }
-  #oldies .card:nth-child(even) {
+  #a-look-back .card:nth-child(even) {
     padding-left: 3rem; } }
+
+/******* PARTNERS *******/
+.partner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  text-align: center;
+  margin-bottom: 4rem; }
+  @media (min-width: 840px) {
+    .partner-container {
+      grid-gap: 6rem; } }
+  .partner-container img {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding: 1.5rem; }
+    @media (min-width: 840px) {
+      .partner-container img {
+        width: 100%;
+        padding: 3rem; } }
 
 #sign-up h2 {
   padding-bottom: 0; }
