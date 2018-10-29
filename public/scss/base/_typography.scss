@@ -78,7 +78,7 @@ i {
 
 p a {
   @extend p;
-  //font-size: 1.2rem;
+  font-size: inherit;
   font-weight: 600;
   color: $mine-shaft;
   text-decoration: none;
@@ -108,5 +108,14 @@ p a {
     line {
       //stroke: #fff;
     }
+  }
+}
+
+a.blue-link {
+  color: $shakespeare;
+  font-weight: initial;
+  transition: opacity .3s;
+  @include hover {
+    opacity: 0.6;
   }
 }

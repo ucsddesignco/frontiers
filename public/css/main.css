@@ -470,6 +470,7 @@ i {
   font-style: italic; }
 
 p a, h3 a {
+  font-size: inherit;
   font-weight: 600;
   color: #232323;
   text-decoration: none; }
@@ -488,6 +489,15 @@ p a, h3 a {
   p a.arrow line, h3 a.arrow line {
     stroke: #EDC945;
     stroke-width: 0.2rem; }
+
+a.blue-link {
+  color: #5baed6;
+  font-weight: initial;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s; }
+  @media (hover: hover) {
+    a.blue-link:hover {
+      opacity: 0.6; } }
 
 /*
  * Header styles
