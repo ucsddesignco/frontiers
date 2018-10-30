@@ -311,22 +311,25 @@ $offsethalf: .25rem;
 
 /******* PARTNERS *******/
 .partner-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  text-align: center;
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 4rem;
   @include md-up {
-    grid-gap: 6rem;
+    
+  }
+  a:first-child {
+    img {
+      padding-right: 3rem;
+      @include md-up {
+        padding-right: 5rem;
+      }
+    }
   }
   img {
-    box-sizing: border-box;
     width: 100%;
-    padding: 1.5rem;
-    @include md-up {
-      width: 100%;
-      padding: 3rem;
-    }
+    box-sizing: border-box;
   }
 }
 

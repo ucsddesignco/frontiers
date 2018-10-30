@@ -905,23 +905,26 @@ a.blue-link {
 
 /******* PARTNERS *******/
 .partner-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  text-align: center;
+  max-width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 4rem; }
-  @media (min-width: 840px) {
-    .partner-container {
-      grid-gap: 6rem; } }
-  .partner-container img {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 100%;
-    padding: 1.5rem; }
+  .partner-container a:first-child img {
+    padding-right: 3rem; }
     @media (min-width: 840px) {
-      .partner-container img {
-        width: 100%;
-        padding: 3rem; } }
+      .partner-container a:first-child img {
+        padding-right: 5rem; } }
+  .partner-container img {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
 
 #sign-up h2 {
   padding-bottom: 0; }
