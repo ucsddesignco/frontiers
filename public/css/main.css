@@ -676,7 +676,7 @@ a.blue-link {
     margin: 1.5rem 0; }
 
 .hero {
-  background-image: url("/public/images/hero.jpg");
+  background-image: url("/public/images/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -795,33 +795,43 @@ a.blue-link {
 .a {
   display: none; }
 
+#talks {
+  background-color: #fce283; }
+  #talks h2 {
+    color: #232323;
+    padding-bottom: 1.2rem; }
+  #talks h3 {
+    margin-top: 2rem; }
+
 /****** SPEAKERS ******/
-@media (min-width: 600px) {
-  #speakers .card-container {
-    margin-top: -4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2rem; }
-    #speakers .card-container .card:nth-child(1) {
-      margin-top: 4rem; }
-    #speakers .card-container .card:nth-child(2) {
-      margin-top: 8rem; }
-    #speakers .card-container .card:nth-child(3) {
-      margin-top: 12rem; } }
-
-@media (min-width: 840px) {
-  #speakers .card-container {
-    margin-top: -6rem;
-    grid-column-gap: 3rem; }
-    #speakers .card-container .card:nth-child(1) {
-      margin-top: 6rem; }
-    #speakers .card-container .card:nth-child(2) {
-      margin-top: 12rem; }
-    #speakers .card-container .card:nth-child(3) {
-      margin-top: 18rem; } }
-
-#speakers .card-text {
-  padding: 0 0.2rem; }
+#speakers {
+  margin-bottom: 6rem; }
+  @media (min-width: 600px) {
+    #speakers .card-container {
+      margin-top: -4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 2rem; }
+      #speakers .card-container .card:nth-child(1) {
+        margin-top: 4rem; }
+      #speakers .card-container .card:nth-child(2) {
+        margin-top: 8rem; }
+      #speakers .card-container .card:nth-child(3) {
+        margin-top: 12rem; } }
+  @media (min-width: 840px) {
+    #speakers .card-container {
+      margin-top: -6rem;
+      grid-column-gap: 3rem; }
+      #speakers .card-container .card:nth-child(1) {
+        margin-top: 6rem; }
+      #speakers .card-container .card:nth-child(2) {
+        margin-top: 12rem; }
+      #speakers .card-container .card:nth-child(3) {
+        margin-top: 18rem; } }
+  #speakers .card-text {
+    padding: 0 0.2rem; }
+  #speakers .title {
+    margin-top: -0.8rem; }
 
 /****** SCHEDULE ******/
 #schedule p, #schedule h3, #schedule p a, p #schedule a {

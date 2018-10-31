@@ -33,7 +33,7 @@
 }
 
 .hero {
-  background-image: url("/public/images/hero.jpg");
+  background-image: url("/public/images/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -177,9 +177,22 @@ $offsethalf: .25rem;
   display: none;
 }
 
+
+#talks {
+  background-color: $sweet-corn;
+  h2 {
+    color: $mine-shaft;
+    padding-bottom: 1.2rem;
+  }
+  h3 {
+    margin-top: 2rem;
+  }
+}
+
 /****** SPEAKERS ******/
 
 #speakers {
+  margin-bottom: 6rem; // Fix later
   .card-container {
     @include sm-up {
       margin-top: -4rem; // Offset incremental margin
@@ -204,6 +217,9 @@ $offsethalf: .25rem;
   }
   .card-text {
     padding: 0 0.2rem;
+  }
+  .title {
+    margin-top: -0.8rem;
   }
 }
 
