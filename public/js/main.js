@@ -13,13 +13,8 @@ function highlightNav() {
     const targetid = "#" + $(this).text().replace(/\s+/g, '-').toLowerCase();
     const target = $(targetid).offset().top + -150;
 
-    // Highlight Sign-Up if at bottom of page
+    // Highlight Partners if at bottom of page
     if (position >= $(document).height() - $(window).height()) {
-      $('.nav-item').removeClass('active');
-      $('.nav-item:last-child').addClass('active');
-    }
-    // Highlight Partners if near bottom of page
-    else if (position >= $(document).height() - $(window).height() - 200) {
       $('.nav-item').removeClass('active');
       $('.nav-item:nth-last-child(2)').addClass('active');
     }
@@ -41,6 +36,8 @@ var main = function() {
 
   highlightNav();
 
+
+
   $('.arrow').each(function() {
     $(this).append($('<span></span>').load('/public/images/arrow.html'));
 
@@ -50,7 +47,7 @@ var main = function() {
     $(this).parent().find('svg').css('width', '3rem');
   }, function() {
     $(this).parent().find('svg').css('width', '2rem');
-  });
+  }); 
 
 
   /* FAQ DRAWER TOGGLE */
@@ -66,11 +63,11 @@ var main = function() {
     let lastChildOffset;
     if ($(window).width() < lgScreen) {
       offset = -70;
-      lastChildOffset = -400;
+      lastChildOffset = 0; // -200
     }
     else {
       offset = 5;
-      lastChildOffset = -200;
+      lastChildOffset = 0;
     }
 
     const dest = "#" + $(this).text().replace(/\s+/g, '-').toLowerCase();
@@ -81,12 +78,18 @@ var main = function() {
       $(".nav-drawer-mobile").fadeToggle(200);
     }
 
+    // Return if dest = Sign Up
+    if (dest == "#sign-up") {
+      return;
+    }
+
     // Don't scroll to bottom if dest = Partners
     if (dest == "#partners") {
       $('html, body').animate({
          scrollTop: $(dest).offset().top + lastChildOffset
       }, 500);
     }
+
     else {
       $('html, body').animate({
         scrollTop: $(dest).offset().top + offset
