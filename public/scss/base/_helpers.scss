@@ -6,6 +6,7 @@
   position: fixed;
 }
 
+/*
 .bleed-right {
   margin-right: -$side-padding;
   @include md-up {
@@ -18,6 +19,7 @@
     margin-right: -$padding-right-xl;
   }
 }
+*/
 
 .collapse {
   @include md-up {

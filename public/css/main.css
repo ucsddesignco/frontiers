@@ -310,18 +310,20 @@ button:focus {
 .no-scroll {
   position: fixed; }
 
+/*
 .bleed-right {
-  margin-right: -10vw; }
-  @media (min-width: 840px) {
-    .bleed-right {
-      margin-right: -10vw; } }
-  @media (min-width: 960px) {
-    .bleed-right {
-      margin-right: -7rem; } }
-  @media (min-width: 1280px) {
-    .bleed-right {
-      margin-right: -11rem; } }
-
+  margin-right: -$side-padding;
+  @include md-up {
+    margin-right: -$side-padding-md;
+  }
+  @include lg-up {
+    margin-right: -$padding-right-lg;
+  }
+  @include xl-up {
+    margin-right: -$padding-right-xl;
+  }
+}
+*/
 @media (min-width: 840px) {
   .collapse {
     display: none; } }
