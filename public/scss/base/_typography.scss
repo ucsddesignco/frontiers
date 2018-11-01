@@ -93,20 +93,24 @@ p a {
         width: 3rem;
       }
     }
+    line {
+      stroke-width: 0.2rem;
+    }
+  }
+  &.arrow-yellow {
     marker {
       fill: $ronchi;
     }
     line {
       stroke: $ronchi;
-      stroke-width: 0.2rem;
     }
   }
   &.arrow-white {
     marker {
-      //fill: #fff;
+      fill: #fff;
     }
     line {
-      //stroke: #fff;
+      stroke: #fff;
     }
   } 
 }

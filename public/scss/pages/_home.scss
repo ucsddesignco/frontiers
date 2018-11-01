@@ -328,13 +328,8 @@ $offsethalf: .25rem;
 /******* PARTNERS *******/
 .partner-container {
   max-width: 40rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 4rem;
-  @include md-up {
-    
-  }
+  text-align: center;
   a:first-child {
     img {
       padding-right: 3rem;
@@ -344,7 +339,7 @@ $offsethalf: .25rem;
     }
   }
   img {
-    width: 100%;
+    width: 49%;
     box-sizing: border-box;
   }
 }

@@ -38,8 +38,13 @@ var main = function() {
 
 
 
-  $('.arrow').each(function() {
+  $('.arrow-yellow').each(function() {
     $(this).append($('<span></span>').load('/public/images/arrow.html'));
+
+  });
+
+  $('.arrow-white').each(function() {
+    $(this).append($('<span></span>').load('/public/images/arrow-white.html'));
 
   });
 

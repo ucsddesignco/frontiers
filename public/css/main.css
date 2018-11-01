@@ -484,11 +484,16 @@ p a, h3 a {
     @media (hover: hover) {
       p a.arrow svg:hover, h3 a.arrow svg:hover {
         width: 3rem; } }
-  p a.arrow marker, h3 a.arrow marker {
-    fill: #EDC945; }
   p a.arrow line, h3 a.arrow line {
-    stroke: #EDC945;
     stroke-width: 0.2rem; }
+  p a.arrow-yellow marker, h3 a.arrow-yellow marker {
+    fill: #EDC945; }
+  p a.arrow-yellow line, h3 a.arrow-yellow line {
+    stroke: #EDC945; }
+  p a.arrow-white marker, h3 a.arrow-white marker {
+    fill: #fff; }
+  p a.arrow-white line, h3 a.arrow-white line {
+    stroke: #fff; }
 
 a.blue-link {
   color: #5baed6;
@@ -916,23 +921,15 @@ a.blue-link {
 /******* PARTNERS *******/
 .partner-container {
   max-width: 40rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  text-align: center; }
   .partner-container a:first-child img {
     padding-right: 3rem; }
     @media (min-width: 840px) {
       .partner-container a:first-child img {
         padding-right: 5rem; } }
   .partner-container img {
-    width: 100%;
+    width: 49%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
 
