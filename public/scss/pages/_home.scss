@@ -30,6 +30,14 @@
   .caption {
     margin: 1.5rem 0;
   }
+  h1 {
+    font-size: 6rem;
+    margin: 1rem 0 3rem -.4rem;
+    @include md-up {
+      font-size: 8.4rem;
+      margin: 2.5rem 0 4rem -.5rem;
+    }
+  }
 }
 
 .hero {

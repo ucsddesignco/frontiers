@@ -310,20 +310,18 @@ button:focus {
 .no-scroll {
   position: fixed; }
 
-/*
 .bleed-right {
-  margin-right: -$side-padding;
-  @include md-up {
-    margin-right: -$side-padding-md;
-  }
-  @include lg-up {
-    margin-right: -$padding-right-lg;
-  }
-  @include xl-up {
-    margin-right: -$padding-right-xl;
-  }
-}
-*/
+  margin-right: -10vw; }
+  @media (min-width: 840px) {
+    .bleed-right {
+      margin-right: -10vw; } }
+  @media (min-width: 960px) {
+    .bleed-right {
+      margin-right: -7rem; } }
+  @media (min-width: 1280px) {
+    .bleed-right {
+      margin-right: -11rem; } }
+
 @media (min-width: 840px) {
   .collapse {
     display: none; } }
@@ -681,6 +679,13 @@ a.blue-link {
               align-items: flex-end; } }
   #home .caption {
     margin: 1.5rem 0; }
+  #home h1 {
+    font-size: 6rem;
+    margin: 1rem 0 3rem -.4rem; }
+    @media (min-width: 840px) {
+      #home h1 {
+        font-size: 8.4rem;
+        margin: 2.5rem 0 4rem -.5rem; } }
 
 .hero {
   background-image: url("/public/images/landing.jpg");
