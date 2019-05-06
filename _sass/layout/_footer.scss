@@ -1,0 +1,49 @@
+/*
+ * Footer styles
+ */
+
+#sign-up {
+  background-color: $shakespeare;
+  p,
+  h2,
+  a {
+    color: #fff;
+  }
+}
+
+#footer {
+  height: $footer-height;
+  background-color: $bahama-blue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p,
+  a {
+    color: #fff;
+    font-weight: 600;
+    @include md-up {
+      margin-top: 1.1rem;
+    }
+  }
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    @include md-up {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.design-logo {
+  img {
+    height: 2.6rem;
+    margin-top: 1rem;
+    @include md-up {
+      margin-top: 0.6rem;
+      height: 3.7rem;
+    }
+  }
+}

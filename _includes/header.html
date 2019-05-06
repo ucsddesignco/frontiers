@@ -1,0 +1,56 @@
+<div id="header">
+  <div id="nav">
+    <div class="nav-container">
+      <div class="nav-bar">
+        <div class="menu">
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <div class="logo">
+          <a href=""><img src="assets/images/logo.svg"/></a>
+        </div>
+      </div>
+
+      <div class="nav-drawer nav-drawer-mobile">
+        <div class="nav-item-wrapper">
+          <ul>
+            {% for item in site.data.nav %}
+            <li class="nav-item">
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+            <li class="nav-item">
+              <a target="_blank" href="{{ site.signup }}">Sign-Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.nav-drawer-mobile -->
+
+      <div class="nav-drawer nav-drawer-desktop">
+        <div class="nav-item-wrapper">
+          <div class="logo-desktop">
+            <a href=""><img src="assets/images/logo.svg"/></a>
+          </div>
+          <ul>
+            {% for item in site.data.nav %}
+            <li class="nav-item">
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+            <li class="nav-item">
+              <a target="_blank" href="{{ site.signup }}">Sign-Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.nav-drawer-desktop-->
+    </div>
+  </div>
+  <!-- /#nav -->
+</div>
+<!-- /#header -->

@@ -1,0 +1,42 @@
+// For global variables such as colors, fonts, etc.
+
+/* Fonts */
+// Font imports
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+// Font Awesome
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+// @import url('/public/fonts/OratorStdMedium.ttf');
+@font-face {
+  font-family: "FF_DIN_Regular";
+  src: url("../fonts/FF_DIN_Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "FF_DIN_Bold";
+  src: url("../fonts/FF_DIN_Bold.otf") format("opentype");
+}
+
+$FFDIN: "FF_DIN_Regular", Helvetica, Arial, sans-serif;
+$FFDIN_BOLD: "FF_DIN_Bold", Helvetica, Arial, sans-serif;
+$JOSEFIN: "Josefin Sans", Helvetica, Arial, sans-serif;
+
+$TEXT_FONT: $FFDIN;
+$HEADER_FONT: $JOSEFIN;
+
+/* Styling */
+
+// Radius of buttons
+$BUTTON_RADIUS: 0px;
+
+// Colors
+$WHITE: #FEFEFE;
+$DARK_BLUE: #174399;
+$LIGHT_BLUE: #2555B4;
+$GRAY_1: #555555;
+$GRAY_2: #777777;
+$DARK_PEACH: #F56A56;
+
+// Other Constants
+$LG_BREAKPOINT: 1920px;
+$MD_BREAKPOINT: 992px;
+$SM_BREAKPOINT: 768px;
+$XS_BREAKPOINT: 480px;

@@ -1,0 +1,361 @@
+/*
+ * Home page
+ */
+
+#speakers,
+#schedule,
+#faq,
+#a-look-back {
+  .container {
+    padding-bottom: 0rem;
+    @include md-up {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+/****** HOME ******/
+
+#home {
+  // Push content down for fixed header
+  margin-top: $header-height;
+  @include lg-up {
+    margin-top: 0;
+  }
+  .container {
+    @include lg-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 4rem;
+      align-items: flex-end;
+    }
+  }
+  .caption {
+    margin: 1.5rem 0;
+  }
+  h1 {
+    font-size: 6rem;
+    margin: 1rem 0 3rem -0.4rem;
+    @include md-up {
+      font-size: 8.4rem;
+      margin: 2.5rem 0 4rem -0.5rem;
+    }
+  }
+}
+
+.hero {
+  background-image: url("../images/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 35rem;
+  @include md-up {
+    //height: 40rem;
+  }
+  @include lg-up {
+    display: none;
+  }
+}
+
+.hero-desktop {
+  display: none;
+  img {
+    width: 100%;
+  }
+  @include lg-up {
+    display: inline-block;
+    margin-left: -$padding-right-lg;
+  }
+  @include xl-up {
+    margin-left: -$padding-right-xl;
+  }
+}
+
+/****** ABOUT ******/
+
+#about {
+  background-color: $sweet-corn;
+  @include sm-up {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 4rem;
+  }
+  .container {
+    @include sm-up {
+      padding-right: 2rem;
+    }
+    @include md-up {
+      padding-right: 3rem;
+    }
+    @include lg-up {
+      padding-right: 5rem;
+    }
+  }
+  h2 {
+    color: $mine-shaft;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.about-img {
+  display: none;
+  overflow: hidden;
+  background-image: url("../images/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include sm-up {
+    display: block;
+    height: 100%;
+    width: 33vw;
+  }
+}
+
+/****** FAQ ******/
+
+#faq-container {
+  @include sm-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.faq-item {
+  &:not(:last-child) {
+    padding-bottom: 2rem;
+  }
+  position: relative;
+  padding-left: 2.2rem;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  @include sm-up {
+    padding-bottom: 0;
+    &:not(:nth-last-child(-n + 2)) {
+      padding-bottom: 2rem;
+    }
+    &:nth-child(odd) {
+      padding-right: 1.5rem;
+    }
+    &:nth-child(even) {
+      margin-left: 1.5rem;
+    }
+  }
+  @include md-up {
+    &:not(:nth-last-child(-n + 2)) {
+      padding-bottom: 3.6rem;
+    }
+    padding-left: 4rem;
+    &:nth-child(odd) {
+      padding-right: 3rem;
+    }
+    &:nth-child(even) {
+      margin-left: 3rem;
+    }
+  }
+}
+
+$offset: 0.5rem;
+$offsethalf: 0.25rem;
+.q {
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  &:before {
+    line-height: 0;
+    transition: 0.3s;
+    content: "\d7";
+    position: absolute;
+    font-size: 2.3rem;
+    color: $ronchi;
+    left: 0;
+    margin-top: 1.1rem;
+    transform-origin: center 0.1rem;
+    transform: rotate(45deg);
+    @include md-up {
+      font-size: 3rem;
+      margin-top: 1.4rem;
+    }
+  }
+  &.active:before {
+    color: $shakespeare;
+    transform: rotate(180deg);
+  }
+}
+.a {
+  display: none;
+}
+
+#talks {
+  background-color: $sweet-corn;
+  h2 {
+    color: $mine-shaft;
+    padding-bottom: 1.2rem;
+  }
+  h3 {
+    margin-top: 2rem;
+  }
+}
+
+/****** SPEAKERS ******/
+
+#speakers {
+  margin-bottom: 6rem; // Fix later
+  .card-container {
+    @include sm-up {
+      margin-top: -4rem; // Offset incremental margin
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 2rem;
+      @for $i from 1 through 3 {
+        .card:nth-child(#{$i}) {
+          margin-top: 4rem * $i;
+        }
+      }
+    }
+    @include md-up {
+      margin-top: -6rem; // Offset incremental margin
+      grid-column-gap: 3rem;
+      @for $i from 1 through 3 {
+        .card:nth-child(#{$i}) {
+          margin-top: 6rem * $i;
+        }
+      }
+    }
+  }
+  .card-text {
+    padding: 0 0.2rem;
+  }
+  .title {
+    margin-top: -0.8rem;
+  }
+}
+
+/****** SCHEDULE ******/
+
+#schedule {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    @include xl-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 8rem;
+    }
+  }
+}
+
+.schedule-item {
+  padding: 0 0 1.6rem 3.8rem;
+  position: relative;
+  // Timeline
+  &:not(:last-child):before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0.45rem;
+    margin-top: 0.6rem;
+    height: 100%;
+    width: 0.3rem;
+    background-color: $sweet-corn;
+    @include sm-up {
+      margin-top: 0.8rem;
+      left: 12.45rem;
+    }
+  }
+  @include sm-up {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 18rem 1fr;
+  }
+}
+
+.schedule-time {
+  font-weight: 600;
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-top: 0.6rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 1rem;
+    border: 0.4rem solid $shakespeare;
+    background-color: #fff;
+    @include sm-up {
+      margin-top: 0.8rem;
+      left: 12rem;
+    }
+  }
+}
+
+.schedule-photo {
+  display: none;
+  text-align: right;
+  background-image: url("../images/agenda.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include xl-up {
+    display: inline-block;
+  }
+}
+
+/****** A LOOK BACK ******/
+
+#a-look-back {
+  .card-container {
+    @include sm-up {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .card {
+    @include sm-up {
+      &:nth-child(odd) {
+        padding-right: 1.2rem;
+      }
+      &:nth-child(even) {
+        padding-left: 1.2rem;
+      }
+    }
+    @include md-up {
+      &:nth-child(odd) {
+        padding-right: 3rem;
+      }
+      &:nth-child(even) {
+        padding-left: 3rem;
+      }
+    }
+  }
+}
+
+/******* PARTNERS *******/
+.partner-container {
+  max-width: 40rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  a:first-child {
+    img {
+      padding-right: 3rem;
+      @include md-up {
+        padding-right: 5rem;
+      }
+    }
+  }
+  img {
+    width: 49%;
+    box-sizing: border-box;
+  }
+}
+
+#sign-up {
+  h2 {
+    padding-bottom: 0;
+  }
+}

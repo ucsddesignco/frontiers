@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="136px" viewBox="0 0 1440 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1.42950932e-13 0 136 5.03763697e-15 136 1452 -2.84217094e-14 1452"></polygon>
+        <path d="M136,532 L136,822.717355 L-136,1028.95822 L-136,564.454023 L-44.4419869,495.031213 L-44.4419869,-329 L136,-329 L136,532 Z" id="path-3"></path>
+    </defs>
+    <g id="Design-Frontiers-Final-Mock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -4237.000000)">
+        <g id="footer" transform="translate(-5.000000, 4237.000000)">
+            <g id="footer-bg" transform="translate(726.000000, 68.000000) scale(-1, 1) rotate(-90.000000) translate(-726.000000, -68.000000) translate(658.000000, -658.000000)">
+                <g id="Combined-Shape" transform="translate(-0.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#2555B4" xlink:href="#path-1"></use>
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use fill="#113A8D" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

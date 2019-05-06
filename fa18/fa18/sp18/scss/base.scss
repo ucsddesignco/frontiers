@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $HEADER_FONT;
+}
+a,
+li,
+div,
+p {
+  font-family: $TEXT_FONT;
+  line-height: 1.4;
+  font-size: 18px;
+
+  @media (max-width: $XS_BREAKPOINT) {
+    font-size: 14px;
+  }
+}
+a {
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.bold {
+  font-family: $FFDIN_BOLD;
+}

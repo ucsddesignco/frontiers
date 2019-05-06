@@ -1,0 +1,56 @@
+/*
+ * Base styles
+ */
+html {
+  font-size: 62.5%;
+  position: relative;
+  @include xxl-up {
+    font-size: 0.7vw;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.body-wrapper {
+  min-height: calc(100vh - #{$footer-height});
+}
+.container {
+  padding: 5rem $side-padding;
+  @include md-up {
+    padding: 8rem $side-padding-md;
+  }
+  @include lg-up {
+    padding-left: $padding-left-lg;
+    padding-right: $padding-right-lg;
+  }
+  @include xl-up {
+    padding-left: $padding-left-xl;
+    padding-right: $padding-right-xl;
+  }
+}
+
+.container-sm {
+  padding: 2.5rem $side-padding;
+}
+
+.card {
+  margin-bottom: 5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card-img {
+  img {
+    width: 100%;
+  }
+}
+
+.card-text {
+  margin-top: 1.5rem;
+  @include md-up {
+    margin-top: 2.5rem;
+  }
+}

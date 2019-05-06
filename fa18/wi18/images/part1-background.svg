@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1281px" height="316px" viewBox="0 0 1281 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 6.55968335e-13 316 -2.84176046e-14 316 1460 0 1460"></polygon>
+    </defs>
+    <g id="Design-Frontiers-Final-Mock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -642.000000)">
+        <g id="part-1" transform="translate(-179.000000, 642.000000)">
+            <g id="background" transform="translate(730.000000, 158.000000) rotate(-90.000000) translate(-730.000000, -158.000000) translate(572.000000, -572.000000)">
+                <g id="Rectangle" transform="translate(0.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FF8879" xlink:href="#path-1"></use>
+                    <polygon fill="#F56A56" mask="url(#mask-2)" points="-545 -315 317 338.74088 317 1145 -545 491.25912"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

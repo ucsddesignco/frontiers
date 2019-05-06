@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1294px" height="370px" viewBox="0 0 1294 370" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 6.55968335e-13 370 -2.84176046e-14 370 1460 0 1460"></polygon>
+    </defs>
+    <g id="Design-Frontiers-Final-Mock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-146.000000, -2592.000000)">
+        <g id="breakout-sessions" transform="translate(146.000000, 2510.000000)">
+            <g id="breakout-1" transform="translate(0.000000, 82.000000)">
+                <g id="Group" transform="translate(730.000000, 185.000000) rotate(-90.000000) translate(-730.000000, -185.000000) translate(545.000000, -545.000000)">
+                    <g id="Rectangle" transform="translate(0.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FF8879" xlink:href="#path-1"></use>
+                        <polygon fill="#F56A56" mask="url(#mask-2)" points="-492 -475 370 -475 370 985 -492 331.25912"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420px" height="500px" viewBox="0 0 420 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>triangle-layered</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design-Frontiers-Final-Mock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1020.000000, 0.000000)">
+        <g id="header" transform="translate(167.000000, -180.000000)">
+            <g id="triangle-layered" transform="translate(853.000000, 0.000000)">
+                <polygon id="Rectangle" fill="#2555B4" transform="translate(261.195839, 339.660989) rotate(-270.000000) translate(-261.195839, -339.660989) " points="600.856828 78.8833339 600.856828 600.438644 -78.4651506 85.3505711"></polygon>
+                <polygon id="Rectangle" fill="#174399" transform="translate(326.056673, 421.258823) scale(-1, -1) rotate(-270.000000) translate(-326.056673, -421.258823) " points="68.5179364 225.983039 583.59541 616.534607 68.5179364 616.534607"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

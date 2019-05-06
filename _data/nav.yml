@@ -1,0 +1,16 @@
+- title: Home
+  url: "#home"
+- title: About
+  url: "#about"
+- title: Speakers
+  url: "#speakers"
+- title: Talks
+  url: "#talks"
+- title: Schedule
+  url: "#schedule"
+- title: FAQ
+  url: "#faq"
+- title: A Look Back
+  url: "#a-look-back"
+- title: Partners
+  url: "#partners"

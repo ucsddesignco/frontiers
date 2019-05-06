@@ -1,0 +1,28 @@
+title: Design Frontiers
+email: designatucsd@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Design sprints and lightning talks focusing on applying human-centered design to different fields and industries.
+baseurl: "" # the subpath of your site, e.g. /blog
+base: "/"
+url: "https://frontiers.designatucsd.org" # the base hostname & protocol for your site, e.g. http://example.com
+signup: "https://docs.google.com/forms/d/e/1FAIpQLSfGj6l2qYwgr4pqL-nC08_mFuYHQwrsAwRkj5RbLoUC2-oIlA/viewform"
+github_username: designatucsd
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-autoprefixer
+  - jekyll-babel
+sass:
+  sass_dir: _sass
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="543px" height="238px" viewBox="0 0 543 238" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5.68434189e-14 2.43517012e-13 237 -1.05495491e-14 237 542 5.68434189e-14 542"></polygon>
+    </defs>
+    <g id="Design-Frontiers-Final-Mock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-157.000000, -1177.000000)">
+        <g id="speaker-cards" transform="translate(149.000000, 1073.000000)">
+            <g id="card-1" transform="translate(0.000000, 104.000000)">
+                <g id="Group" transform="translate(279.500000, 119.000000) rotate(-90.000000) translate(-279.500000, -119.000000) translate(161.000000, -152.000000)">
+                    <g id="Rectangle" transform="translate(0.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#E4E4E4" xlink:href="#path-1"></use>
+                        <polygon fill="#F2F2F2" mask="url(#mask-2)" points="-525.291045 -258.515498 237 319.506618 237 1032.38173 -525.291045 454.359613"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
