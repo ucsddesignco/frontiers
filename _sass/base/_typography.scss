@@ -3,19 +3,21 @@
  */
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Filson Pro', 'Helvetica', 'Arial', sans-serif;
-  color: $mine-shaft;
+  font-family: "Filson Pro", "Helvetica", "Arial", sans-serif;
+  color: $dark-text;
   font-weight: 400;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
 }
 
 h1 {
   font-size: 2.4rem;
   line-height: 3.4rem;
-  color: $bahama-blue;
+  color: $dark-gray;
   @include md-up {
     font-size: 3.6rem;
     line-height: 4.2rem;
@@ -23,7 +25,7 @@ h1 {
 }
 
 h2 {
-  color: $bahama-blue;
+  color: $dark-gray;
   font-size: 1.8rem;
   line-height: 2.6rem;
   padding-bottom: 2.4rem;
@@ -42,10 +44,11 @@ h3 {
   }
 }
 
-p, li {
+p,
+li {
   font-size: 1.3rem;
   line-height: 2.2rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   @include md-up {
     font-size: 1.7rem;
     line-height: 2.8rem;
@@ -63,12 +66,14 @@ p, li {
   //list-style-position: inside;
 }
 
-#faq ul, #faq li {
+#faq ul,
+#faq li {
   //padding: 0;
   margin: 0;
 }
 
-strong, b {
+strong,
+b {
   font-weight: 600;
 }
 
@@ -80,14 +85,14 @@ p a {
   @extend p;
   font-size: inherit;
   font-weight: 600;
-  color: $mine-shaft;
+  color: $black;
   text-decoration: none;
   &.arrow {
     svg {
       margin-left: 0.8rem;
       width: 2rem;
       height: 0.8rem;
-      transition: width .3s;
+      transition: width 0.3s;
       overflow: visible;
       @include hover {
         width: 3rem;
@@ -99,10 +104,10 @@ p a {
   }
   &.arrow-yellow {
     marker {
-      fill: $ronchi;
+      fill: $accent;
     }
     line {
-      stroke: $ronchi;
+      stroke: $accent;
     }
   }
   &.arrow-white {
@@ -112,13 +117,13 @@ p a {
     line {
       stroke: #fff;
     }
-  } 
+  }
 }
 
 a.blue-link {
-  color: $shakespeare;
+  color: $accent;
   font-weight: initial;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
   @include hover {
     opacity: 0.6;
   }

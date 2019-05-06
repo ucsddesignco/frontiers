@@ -13,14 +13,13 @@ layout: default
     </div>
 
     <div>
-      <h3>Design Frontiers</h3>
-      <h1>Intuit</h1>
+      <h2>Design Frontiers</h2>
+      <img src="assets/images/sony-logo.svg" alt="Sony" class="sony-logo" />
       <p class="subhead">
-        Tackle real product design challenges alongside leading designers in the
-        consumer product space.
+        A day long design sprint hosted in collaboration with Sony.
       </p>
       <p>
-        November 18, 2018 @
+        May 19, 2019 @
         <a
           class="blue-link"
           href="http://jacobsschool.ucsd.edu/news/news_resources/map.shtml"
@@ -29,10 +28,7 @@ layout: default
         >
       </p>
       <p>
-        <a
-          class="arrow arrow-yellow"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfGj6l2qYwgr4pqL-nC08_mFuYHQwrsAwRkj5RbLoUC2-oIlA/viewform"
-          target="_blank"
+        <a class="arrow arrow-yellow" href="{{ site.signup }}" target="_blank"
           >Sign Up</a
         >
       </p>
@@ -40,18 +36,18 @@ layout: default
   </div>
 </div>
 
-<div id="about">
+<div id="about" class="bg-dark">
   <div class="container">
     <div>
       <h2>About</h2>
       <p>
-        Design Frontiers is a day-long event where students use human-centered
-        design to conceptualize and ideate solutions to real world problems that
-        companies face. We partner with industry leaders to craft a hands-on
-        experience that includes a design sprint and accompanying product talks.
-        This event unites students across disciplines and showcases how design
-        thinking can apply to a wide range of fields beyond UX and product
-        design.
+        Design Frontiers is an event consisting of a design sprint and
+        accompanying lightning talks. The event will increase cross
+        collaboration of students across multiple disciplines, and show UC San
+        Diego students, through a hands on experience, how user centered design
+        can apply to various fields. Our goal is to focus on design beyond UX
+        and product design. This quarter we will focus on the field of consumer
+        electronics; specifically on TVs and displays.
       </p>
     </div>
   </div>
@@ -61,71 +57,53 @@ layout: default
 
 <div id="speakers">
   <div class="container">
-    <h2>Speakers</h2>
+    <h2 class="color-accent">Speakers</h2>
 
     <div class="card-container">
+      {% for speaker in site.data.speakers %}
       <div class="card">
         <div class="card-img">
-          <img src="assets/images/nikkie-ella.png" />
+          <img src="assets/images/speakers/{{ speaker.img }}" />
         </div>
         <div class="card-text">
-          <h3>Nikkie Ella</h3>
-          <p class="title">Product Designer, Intuit</p>
+          <h3>{{ speaker.name }}</h3>
+          <p class="title">
+            {{ speaker.title }}<br />
+            {{ speaker.company }}
+          </p>
         </div>
       </div>
-      <!-- /.card -->
-
-      <div class="card">
-        <div class="card-img">
-          <img src="assets/images/kathy-li.jpg" />
-        </div>
-        <div class="card-text">
-          <h3>Kathy Li</h3>
-          <p class="title">Product Designer, Intuit</p>
-        </div>
-      </div>
-      <!-- /.card -->
-
-      <div class="card">
-        <div class="card-img">
-          <img src="assets/images/kristina-eastham.jpg" />
-        </div>
-        <div class="card-text">
-          <h3>Kristina Eastham</h3>
-          <p class="title">Product Design Researcher, Intuit</p>
-        </div>
-      </div>
-      <!-- /.card -->
+      {% endfor %}
     </div>
     <!-- /.card-container -->
+    <!--
+    <p>
+      Also speaking… Toshi Fushimi (as our guest from Japan). He is a Sr.
+      Manager of App Development.
+    </p> -->
   </div>
 </div>
 
-<div id="talks">
+<div id="talks" class="bg-dark">
   <div class="container">
     <div>
       <h2>Talks</h2>
-      <h3>D4D Process - Intuit’s “Design for Delight (D4D)” Methodology</h3>
+      <h3>Who We Are, How We Work</h3>
       <p>
-        Intuit founder, Scott Cook, created the secret sauce behind designing
-        and developing successful products. We’ll walk you through Intuit’s
-        Design for Delight (D4D) Methodology as your foundation going into the
-        design sprints.
+        Meet our teams in San Diego and Tokyo, and learn how we work globally to
+        design new features for Sony's TVs.
       </p>
-      <h3>Re-imagine TurboTax Live’s On-boarding Experience</h3>
+      <h3>User Centered Design</h3>
       <p>
-        DIY taxpayers lack confidence on how to use the TurboTax Live feature to
-        access expert agent help. Design an improved on-boarding experience that
-        will demonstrate the value of the product resulting in higher
-        satisfaction and confidence when filing taxes with TurboTax.
+        We'll walk you through our user centered design process (researching,
+        thinking, prototyping, testing, and iterating) as your foundation going
+        into design sprints.
       </p>
-      <h3>Foster Mint Community Engagement</h3>
+      <h3>Fill the world with emotion through Sony's TVs</h3>
       <p>
-        Mint’s user base is 20 million customers and comprises of members with
-        different debt mindsets (from early-stage to financially savvy) and
-        varying stages of financial management. How can we create a community in
-        which our customers find value within this network, engage and ask
-        questions?
+        How do our customers engage with TVs and other displays now and in the
+        future? We'll share some of our findings so you can do what we do,
+        always going back to the research as you design.
       </p>
     </div>
   </div>
@@ -172,7 +150,7 @@ layout: default
     <h2>A Look Back</h2>
 
     <div class="card-container">
-      {% for event in site.data.a-look-back %}
+      {% for event in site.data.a-look-back %} {% unless event.hide %}
       <div class="card">
         <div class="card-img">
           <img src="assets/images/a-look-back/{{ event.img }}" />
@@ -187,11 +165,12 @@ layout: default
               class="arrow arrow-yellow"
               href="{{ event.link }}"
               target="_blank"
-              >Visit Site</a
+              >Learn More</a
             >
           </p>
         </div>
       </div>
+      {% endunless %}
       <!-- /.card -->
       {% endfor %}
     </div>
@@ -201,10 +180,10 @@ layout: default
 
 <div id="partners">
   <div class="container">
-    <h2>Partners</h2>
+    <h2 class="color-accent">Partners</h2>
     <div class="partner-container">
-      <a href="https://www.intuit.com/" target="_blank"
-        ><img src="assets/images/intuit-logo.svg" alt="Intuit"
+      <a href="https://www.sony.com/" target="_blank"
+        ><img src="assets/images/sony-logo.svg" alt="Sony"
       /></a>
       <a href="https://designlab.ucsd.edu/" target="_blank"
         ><img src="assets/images/dlab-logo.svg" alt="The Design Lab"
@@ -217,18 +196,17 @@ layout: default
   <div class="container">
     <h2>Join us at Design Frontiers</h2>
     <p class="subhead">
-      November 18, 2018 @
+      May 19, 2019 @
+
       <a
         href="http://jacobsschool.ucsd.edu/news/news_resources/map.shtml"
         target="_blank"
         >Qualcomm Room, JSOE</a
       >
     </p>
+    <br /><br /><br />
     <p>
-      <a
-        class="arrow arrow-white"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfGj6l2qYwgr4pqL-nC08_mFuYHQwrsAwRkj5RbLoUC2-oIlA/viewform"
-        target="_blank"
+      <a class="arrow arrow-white" href="{{ site.signup }}" target="_blank"
         >Sign Up</a
       >
     </p>

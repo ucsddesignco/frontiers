@@ -17,6 +17,14 @@
 /****** HOME ******/
 
 #home {
+  h2 {
+    color: $dark-text;
+    padding: 0;
+  }
+  .sony-logo {
+    margin: 5.5rem 0 4.5rem;
+    width: 28rem;
+  }
   // Push content down for fixed header
   margin-top: $header-height;
   @include lg-up {
@@ -75,7 +83,6 @@
 /****** ABOUT ******/
 
 #about {
-  background-color: $sweet-corn;
   @include sm-up {
     display: grid;
     grid-template-columns: auto auto;
@@ -93,7 +100,6 @@
     }
   }
   h2 {
-    color: $mine-shaft;
     padding-bottom: 1.2rem;
   }
 }
@@ -169,7 +175,7 @@ $offsethalf: 0.25rem;
     content: "\d7";
     position: absolute;
     font-size: 2.3rem;
-    color: $ronchi;
+    color: $black;
     left: 0;
     margin-top: 1.1rem;
     transform-origin: center 0.1rem;
@@ -180,7 +186,7 @@ $offsethalf: 0.25rem;
     }
   }
   &.active:before {
-    color: $shakespeare;
+    color: $accent;
     transform: rotate(180deg);
   }
 }
@@ -189,9 +195,7 @@ $offsethalf: 0.25rem;
 }
 
 #talks {
-  background-color: $sweet-corn;
   h2 {
-    color: $mine-shaft;
     padding-bottom: 1.2rem;
   }
   h3 {
@@ -204,25 +208,15 @@ $offsethalf: 0.25rem;
 #speakers {
   margin-bottom: 6rem; // Fix later
   .card-container {
+    //  margin-bottom: 5rem; // For text at bottom
     @include sm-up {
-      margin-top: -4rem; // Offset incremental margin
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 2rem;
-      @for $i from 1 through 3 {
-        .card:nth-child(#{$i}) {
-          margin-top: 4rem * $i;
-        }
-      }
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 6rem;
     }
     @include md-up {
-      margin-top: -6rem; // Offset incremental margin
-      grid-column-gap: 3rem;
-      @for $i from 1 through 3 {
-        .card:nth-child(#{$i}) {
-          margin-top: 6rem * $i;
-        }
-      }
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 7rem;
     }
   }
   .card-text {
@@ -261,7 +255,7 @@ $offsethalf: 0.25rem;
     margin-top: 0.6rem;
     height: 100%;
     width: 0.3rem;
-    background-color: $sweet-corn;
+    background-color: $accent;
     @include sm-up {
       margin-top: 0.8rem;
       left: 12.45rem;
@@ -285,7 +279,7 @@ $offsethalf: 0.25rem;
     height: 0.5rem;
     width: 0.5rem;
     border-radius: 1rem;
-    border: 0.4rem solid $shakespeare;
+    border: 0.4rem solid $accent;
     background-color: #fff;
     @include sm-up {
       margin-top: 0.8rem;
@@ -340,6 +334,16 @@ $offsethalf: 0.25rem;
   max-width: 40rem;
   margin-bottom: 4rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+  }
   a:first-child {
     img {
       padding-right: 3rem;
@@ -349,9 +353,13 @@ $offsethalf: 0.25rem;
     }
   }
   img {
-    width: 49%;
+    //  width: 49%;
+    width: 100%;
     box-sizing: border-box;
   }
+}
+
+.partner-container {
 }
 
 #sign-up {

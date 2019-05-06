@@ -64,17 +64,17 @@
       font-size: 1.6rem;
       font-weight: 600;
       text-decoration: none;
-      color: $mine-shaft;
+      color: $black;
       transition: 0.3s;
     }
     &.active {
       a {
-        color: $shakespeare;
+        color: $accent;
       }
     }
     @include hover {
       a {
-        color: $shakespeare;
+        color: $accent;
       }
     }
   }

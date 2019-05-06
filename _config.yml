@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 base: "/"
 url: "https://frontiers.designatucsd.org" # the base hostname & protocol for your site, e.g. http://example.com
-signup: "https://docs.google.com/forms/d/e/1FAIpQLSfGj6l2qYwgr4pqL-nC08_mFuYHQwrsAwRkj5RbLoUC2-oIlA/viewform"
+signup: "/"
 github_username: designatucsd
 
 # Build settings

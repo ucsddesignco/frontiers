@@ -31,3 +31,16 @@
     display: inline-block;
   }
 }
+
+.bg-dark {
+  background-color: $black;
+  color: $light-text;
+  h1,
+  h2 {
+    color: $gray;
+  }
+}
+
+.color-accent {
+  color: $accent;
+}
