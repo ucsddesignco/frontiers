@@ -20,7 +20,7 @@
     property="og:image"
     content="https://frontiers.designatucsd.orgassets/images/preview.jpg"
   />
-  <meta property="og:url" content="https://frontiers.designatucsd.org" />
+  <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:description" content="Design sprints and lightning talks focusing on applying human-centered design to different fields and industries." />
 
   <!-- Google Analytics -->
@@ -214,8 +214,9 @@
       <img src="assets/images/landing.jpg" />
     </div>
 
-    <div>
+    <div class="info">
       <h2>Design Frontiers</h2>
+      <p style="margin-top: -.2rem"><b>Sponsored by</b></p>
       <img src="assets/images/sony-logo.svg" alt="Sony" class="sony-logo" />
       <p class="subhead">
         A day long design sprint hosted in collaboration with Sony.
@@ -261,9 +262,9 @@
   <div class="container">
     <h2 class="color-accent">Speakers</h2>
 
-    <div class="card-container">
+    <div class="grid">
       
-      <div class="card">
+      <div class="card grid__item desk--one-third lap--one-half">
         <div class="card-img">
           <img src="assets/images/speakers/yuko.jpg" />
         </div>
@@ -276,7 +277,7 @@
         </div>
       </div>
       
-      <div class="card">
+      <div class="card grid__item desk--one-third lap--one-half">
         <div class="card-img">
           <img src="assets/images/speakers/tracy.jpg" />
         </div>
@@ -289,7 +290,7 @@
         </div>
       </div>
       
-      <div class="card">
+      <div class="card grid__item desk--one-third lap--one-half">
         <div class="card-img">
           <img src="assets/images/speakers/lindsay.jpg" />
         </div>
@@ -303,12 +304,6 @@
       </div>
       
     </div>
-    <!-- /.card-container -->
-    <!--
-    <p>
-      Also speaking… Toshi Fushimi (as our guest from Japan). He is a Sr.
-      Manager of App Development.
-    </p> -->
   </div>
 </div>
 
@@ -339,42 +334,42 @@
 
 <div id="schedule">
   <div class="container">
-    <div>
+    <div class="schedule-info">
       <h2>Schedule</h2>
       
       <div class="schedule-item">
         <p class="schedule-time">10:00am</p>
-        <p>Check In</p>
+        <p class="schedule-title">Check In</p>
       </div>
       
       <div class="schedule-item">
         <p class="schedule-time">11:00am</p>
-        <p>Introduction</p>
+        <p class="schedule-title">Introduction</p>
       </div>
       
       <div class="schedule-item">
         <p class="schedule-time">11:30am</p>
-        <p>Lightning Talks</p>
+        <p class="schedule-title">Lightning Talks</p>
       </div>
       
       <div class="schedule-item">
         <p class="schedule-time">12:00pm</p>
-        <p>Lunch</p>
+        <p class="schedule-title">Lunch</p>
       </div>
       
       <div class="schedule-item">
         <p class="schedule-time">1:00pm</p>
-        <p>Design & Prototype</p>
+        <p class="schedule-title">Design & Prototype</p>
       </div>
       
       <div class="schedule-item">
         <p class="schedule-time">3:00pm</p>
-        <p>Test & Iterate</p>
+        <p class="schedule-title">Test & Iterate</p>
       </div>
       
       <div class="schedule-item">
         <p class="schedule-time">5:00pm</p>
-        <p>Presentation, Feedback, & Closing</p>
+        <p class="schedule-title">Presentation, Feedback, & Closing</p>
       </div>
       
     </div>
@@ -385,93 +380,109 @@
 <div id="faq">
   <div class="container">
     <h2>Frequently Asked Questions</h2>
-    <div id="faq-container">
+    <div class="grid faq-container">
       
-      <div class="faq-item">
-        <div class="q">
-          <p>What is Design Frontiers?</p>
-        </div>
-        <div class="a">
-          <p>
-            Design Frontiers is an event consisting of a design sprint and accompanying lighting talks. The event will increase cross collaboration of students across multiple disciplines and show UC San Diego students, through a hands on experience, how design thinking can apply to various fields. Our goal is to focus on design beyond UX and product design. This quarter we will focus on Intuit's application of design in its products and company as a whole.
-          </p>
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>What is Design Frontiers?</p>
+          </div>
+          <div class="a">
+            <p>
+              Design Frontiers is an event consisting of a design sprint and accompanying lighting talks. The event will increase cross collaboration of students across multiple disciplines and show UC San Diego students, through a hands on experience, how design thinking can apply to various fields. Our goal is to focus on design beyond UX and product design. This quarter we will focus on Intuit's application of design in its products and company as a whole.
+            </p>
+          </div>
         </div>
       </div>
       
-      <div class="faq-item">
-        <div class="q">
-          <p>Where will the event be?</p>
-        </div>
-        <div class="a">
-          <p>
-            The event will take place in the <a class='blue-link' href='http://jacobsschool.ucsd.edu/news/news_resources/map.shtml' target='_blank' >Qualcomm Room at the Jacobs School of Engineering</a> at UC San Diego.
-          </p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="q">
-          <p>What is a design sprint?</p>
-        </div>
-        <div class="a">
-          <p>
-            A design sprint is an interactive process where participants have the opportunity to collaborate and use design thinking principles to rapidly innovate solutions to a given task under a time constraint.
-          </p>
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>Where will the event be?</p>
+          </div>
+          <div class="a">
+            <p>
+              The event will take place in the <a class='blue-link' href='http://jacobsschool.ucsd.edu/news/news_resources/map.shtml' target='_blank' >Qualcomm Room at the Jacobs School of Engineering</a> at UC San Diego.
+            </p>
+          </div>
         </div>
       </div>
       
-      <div class="faq-item">
-        <div class="q">
-          <p>What is design thinking?</p>
-        </div>
-        <div class="a">
-          <p>
-            Design thinking is an ideology that advocates for a people-centered approach to innovative problem solving. The design-thinking process comprises of the key stages of empathizing, defining, ideating, prototyping, testing, and implementing.
-          </p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="q">
-          <p>Why should I attend?</p>
-        </div>
-        <div class="a">
-          <p>
-            <ul><li>You will have the opportunity to hear from professionals and learn about how design thinking can be applied in Intuit's context and the industry.</li><li> You have the opportunity to network with professionals from the industry and like-minded peers</li><li>You will gain valuable feedback on your design work from professionals</li><li>You can start a project that may end up on your portfolio. </li></ul>
-          </p>
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>What is a design sprint?</p>
+          </div>
+          <div class="a">
+            <p>
+              A design sprint is an interactive process where participants have the opportunity to collaborate and use design thinking principles to rapidly innovate solutions to a given task under a time constraint.
+            </p>
+          </div>
         </div>
       </div>
       
-      <div class="faq-item">
-        <div class="q">
-          <p>Who will be attending?</p>
-        </div>
-        <div class="a">
-          <p>
-            Attendees are expected to be UCSD students from the undergraduate community, graduate students, professors, industry professionals and more.
-          </p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="q">
-          <p>Where can I find parking on the day of the event?</p>
-        </div>
-        <div class="a">
-          <p>
-            You can find parking at the <a href='https://goo.gl/maps/S4Cnw2zqbwA2' class='blue-link' target='_blank'>Gilman Parking Structure</a>.
-          </p>
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>What is design thinking?</p>
+          </div>
+          <div class="a">
+            <p>
+              Design thinking is an ideology that advocates for a people-centered approach to innovative problem solving. The design-thinking process comprises of the key stages of empathizing, defining, ideating, prototyping, testing, and implementing.
+            </p>
+          </div>
         </div>
       </div>
       
-      <div class="faq-item">
-        <div class="q">
-          <p>Will there be food?</p>
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>Why should I attend?</p>
+          </div>
+          <div class="a">
+            <p>
+              <ul><li>You will have the opportunity to hear from professionals and learn about how design thinking can be applied in Intuit's context and the industry.</li><li> You have the opportunity to network with professionals from the industry and like-minded peers</li><li>You will gain valuable feedback on your design work from professionals</li><li>You can start a project that may end up on your portfolio. </li></ul>
+            </p>
+          </div>
         </div>
-        <div class="a">
-          <p>
-            Yes, we will be providing lunch and plenty of snacks throughout the day.
-          </p>
+      </div>
+      
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>Who will be attending?</p>
+          </div>
+          <div class="a">
+            <p>
+              Attendees are expected to be UCSD students from the undergraduate community, graduate students, professors, industry professionals and more.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>Where can I find parking on the day of the event?</p>
+          </div>
+          <div class="a">
+            <p>
+              You can find parking at the <a href='https://goo.gl/maps/S4Cnw2zqbwA2' class='blue-link' target='_blank'>Gilman Parking Structure</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>Will there be food?</p>
+          </div>
+          <div class="a">
+            <p>
+              Yes, we will be providing lunch and plenty of snacks throughout the day.
+            </p>
+          </div>
         </div>
       </div>
       
@@ -484,11 +495,11 @@
   <div class="container">
     <h2>A Look Back</h2>
 
-    <div class="card-container">
+    <div class="card-container grid">
        
       <!-- /.card -->
        
-      <div class="card">
+      <div class="card grid__item lap-up--one-half">
         <div class="card-img">
           <img src="assets/images/a-look-back/healthcare.jpg" />
         </div>
@@ -510,7 +521,7 @@
       
       <!-- /.card -->
        
-      <div class="card">
+      <div class="card grid__item lap-up--one-half">
         <div class="card-img">
           <img src="assets/images/a-look-back/education.jpg" />
         </div>

@@ -12,8 +12,9 @@ layout: default
       <img src="assets/images/landing.jpg" />
     </div>
 
-    <div>
+    <div class="info">
       <h2>Design Frontiers</h2>
+      <p style="margin-top: -.2rem"><b>Sponsored by</b></p>
       <img src="assets/images/sony-logo.svg" alt="Sony" class="sony-logo" />
       <p class="subhead">
         A day long design sprint hosted in collaboration with Sony.
@@ -59,9 +60,9 @@ layout: default
   <div class="container">
     <h2 class="color-accent">Speakers</h2>
 
-    <div class="card-container">
+    <div class="grid">
       {% for speaker in site.data.speakers %}
-      <div class="card">
+      <div class="card grid__item desk--one-third lap--one-half">
         <div class="card-img">
           <img src="assets/images/speakers/{{ speaker.img }}" />
         </div>
@@ -75,12 +76,6 @@ layout: default
       </div>
       {% endfor %}
     </div>
-    <!-- /.card-container -->
-    <!--
-    <p>
-      Also speaking… Toshi Fushimi (as our guest from Japan). He is a Sr.
-      Manager of App Development.
-    </p> -->
   </div>
 </div>
 
@@ -111,12 +106,12 @@ layout: default
 
 <div id="schedule">
   <div class="container">
-    <div>
+    <div class="schedule-info">
       <h2>Schedule</h2>
       {% for item in site.data.schedule %}
       <div class="schedule-item">
         <p class="schedule-time">{{ item.time }}</p>
-        <p>{{ item.title }}</p>
+        <p class="schedule-title">{{ item.title }}</p>
       </div>
       {% endfor %}
     </div>
@@ -127,16 +122,18 @@ layout: default
 <div id="faq">
   <div class="container">
     <h2>Frequently Asked Questions</h2>
-    <div id="faq-container">
+    <div class="grid faq-container">
       {% for item in site.data.faq %}
-      <div class="faq-item">
-        <div class="q">
-          <p>{{ item.q }}</p>
-        </div>
-        <div class="a">
-          <p>
-            {{ item.a }}
-          </p>
+      <div class="grid__item desk--one-half">
+        <div class="faq-item">
+          <div class="q">
+            <p>{{ item.q }}</p>
+          </div>
+          <div class="a">
+            <p>
+              {{ item.a }}
+            </p>
+          </div>
         </div>
       </div>
       {% endfor %}
@@ -149,9 +146,9 @@ layout: default
   <div class="container">
     <h2>A Look Back</h2>
 
-    <div class="card-container">
+    <div class="card-container grid">
       {% for event in site.data.a-look-back %} {% unless event.hide %}
-      <div class="card">
+      <div class="card grid__item lap-up--one-half">
         <div class="card-img">
           <img src="assets/images/a-look-back/{{ event.img }}" />
         </div>

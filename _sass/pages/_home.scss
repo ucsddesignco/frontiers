@@ -35,7 +35,14 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 4rem;
-      align-items: flex-end;
+      grid-template-areas: "home-photo home-info";
+      //@includealign-items: flex-end;
+    }
+    .info {
+      grid-area: home-info;
+    }
+    .hero-desktop {
+      grid-area: home-photo;
     }
   }
   .caption {
@@ -87,8 +94,10 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 4rem;
+    grid-template-areas: "about-text about-photo";
   }
   .container {
+    grid-area: about-text;
     @include sm-up {
       padding-right: 2rem;
     }
@@ -105,6 +114,7 @@
 }
 
 .about-img {
+  grid-area: about-photo;
   display: none;
   overflow: hidden;
   background-image: url("../images/about.jpg");
@@ -127,42 +137,31 @@
   }
 }
 
-.faq-item {
-  &:not(:last-child) {
-    padding-bottom: 2rem;
+$faq-gutter: 10rem;
+.faq-container {
+  padding-left: 4rem;
+  margin-left: -$faq-gutter !important;
+
+  @include grid-media-query(lap-up) {
+    // padding-left: 5rem;
   }
-  position: relative;
-  padding-left: 2.2rem;
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  @include sm-up {
-    padding-bottom: 0;
-    &:not(:nth-last-child(-n + 2)) {
-      padding-bottom: 2rem;
-    }
-    &:nth-child(odd) {
-      padding-right: 1.5rem;
-    }
-    &:nth-child(even) {
-      margin-left: 1.5rem;
-    }
-  }
-  @include md-up {
-    &:not(:nth-last-child(-n + 2)) {
-      padding-bottom: 3.6rem;
-    }
-    padding-left: 4rem;
-    &:nth-child(odd) {
-      padding-right: 3rem;
-    }
-    &:nth-child(even) {
-      margin-left: 3rem;
-    }
+  .grid__item {
+    padding-left: $faq-gutter !important;
   }
 }
 
+.faq-item {
+  position: relative;
+  p {
+    margin: 0; // Prevent jump on drawer open
+    padding: 0;
+  }
+  margin-bottom: 1.5rem;
+
+  @include md-up {
+    margin-bottom: 3.5rem;
+  }
+}
 $offset: 0.5rem;
 $offsethalf: 0.25rem;
 .q {
@@ -176,7 +175,7 @@ $offsethalf: 0.25rem;
     position: absolute;
     font-size: 2.3rem;
     color: $black;
-    left: 0;
+    left: -4rem;
     margin-top: 1.1rem;
     transform-origin: center 0.1rem;
     transform: rotate(45deg);
@@ -207,18 +206,6 @@ $offsethalf: 0.25rem;
 
 #speakers {
   margin-bottom: 6rem; // Fix later
-  .card-container {
-    //  margin-bottom: 5rem; // For text at bottom
-    @include sm-up {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 6rem;
-    }
-    @include md-up {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 7rem;
-    }
-  }
   .card-text {
     padding: 0 0.2rem;
   }
@@ -239,6 +226,7 @@ $offsethalf: 0.25rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 8rem;
+      grid-template-areas: "schedule-info schedule-photo";
     }
   }
 }
@@ -265,10 +253,15 @@ $offsethalf: 0.25rem;
     padding-left: 0;
     display: grid;
     grid-template-columns: 18rem 1fr;
+    grid-template-areas: "schedule-time schedule-title";
   }
 }
 
+.schedule-title {
+  grid-area: schedule-title;
+}
 .schedule-time {
+  grid-area: schedule-time;
   font-weight: 600;
   &:before {
     content: "";
@@ -288,7 +281,11 @@ $offsethalf: 0.25rem;
   }
 }
 
+.schedule-info {
+  grid-area: schedule-info;
+}
 .schedule-photo {
+  grid-area: schedule-photo;
   display: none;
   text-align: right;
   background-image: url("../images/agenda.jpg");
@@ -304,27 +301,11 @@ $offsethalf: 0.25rem;
 
 #a-look-back {
   .card-container {
-    @include sm-up {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
   }
   .card {
-    @include sm-up {
-      &:nth-child(odd) {
-        padding-right: 1.2rem;
-      }
-      &:nth-child(even) {
-        padding-left: 1.2rem;
-      }
-    }
-    @include md-up {
-      &:nth-child(odd) {
-        padding-right: 3rem;
-      }
-      &:nth-child(even) {
-        padding-left: 3rem;
-      }
+    margin-bottom: 4rem;
+    @include grid-media-query(lap-up) {
+      margin-bottom: 0;
     }
   }
 }

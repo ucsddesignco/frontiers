@@ -26,3 +26,6 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+autoprefixer:
+  grid: "autoplace"
