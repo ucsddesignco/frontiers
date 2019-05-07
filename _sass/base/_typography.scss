@@ -120,6 +120,12 @@ p a {
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .arrow {
+    display: none;
+  }
+}
+
 a.blue-link {
   color: $accent;
   font-weight: initial;

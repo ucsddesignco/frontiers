@@ -22,7 +22,7 @@
     padding: 0;
   }
   .sony-logo {
-    margin: 5.5rem 0 4.5rem;
+    margin: 5rem 0 4rem;
     width: 28rem;
   }
   // Push content down for fixed header
@@ -36,7 +36,7 @@
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 4rem;
       grid-template-areas: "home-photo home-info";
-      //@includealign-items: flex-end;
+      align-items: flex-end;
     }
     .info {
       grid-area: home-info;
@@ -137,7 +137,7 @@
   }
 }
 
-$faq-gutter: 10rem;
+$faq-gutter: 12rem;
 .faq-container {
   padding-left: 4rem;
   margin-left: -$faq-gutter !important;
@@ -221,7 +221,7 @@ $offsethalf: 0.25rem;
     margin: 0;
     padding: 0;
   }
-  .container {
+  .schedule-container {
     @include xl-up {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -318,6 +318,7 @@ $offsethalf: 0.25rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  grid-template-areas: "partner-sony partner-dlab";
   a {
     display: flex;
     align-items: center;
@@ -338,9 +339,12 @@ $offsethalf: 0.25rem;
     width: 100%;
     box-sizing: border-box;
   }
-}
-
-.partner-container {
+  .partner-sony {
+    grid-area: partner-sony;
+  }
+  .partner-dlab {
+    grid-area: partner-dlab;
+  }
 }
 
 #sign-up {

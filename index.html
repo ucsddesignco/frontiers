@@ -3,6 +3,8 @@ title: Design Frontiers
 layout: default
 ---
 
+<!---->
+
 <div id="home">
   <div class="hero">
     <!--  <img src="assets/images/hero.jpg"> -->
@@ -14,7 +16,7 @@ layout: default
 
     <div class="info">
       <h2>Design Frontiers</h2>
-      <p style="margin-top: -.2rem"><b>Sponsored by</b></p>
+      <p style="margin-top: 0rem"><b>Sponsored by</b></p>
       <img src="assets/images/sony-logo.svg" alt="Sony" class="sony-logo" />
       <p class="subhead">
         A day long design sprint hosted in collaboration with Sony.
@@ -28,11 +30,12 @@ layout: default
           >Qualcomm Room, JSOE</a
         >
       </p>
+      <!--
       <p>
-        <a class="arrow arrow-yellow" href="{{ site.signup }}" target="_blank"
+        <a class="btn btn-accent" href="{{ site.signup }}" target="_blank"
           >Sign Up</a
         >
-      </p>
+      </p>-->
     </div>
   </div>
 </div>
@@ -46,9 +49,8 @@ layout: default
         accompanying lightning talks. The event will increase cross
         collaboration of students across multiple disciplines, and show UC San
         Diego students, through a hands on experience, how user centered design
-        can apply to various fields. Our goal is to focus on design beyond UX
-        and product design. This quarter we will focus on the field of consumer
-        electronics; specifically on TVs and displays.
+        can apply to various fields. This quarter we will focus on the field of
+        consumer electronics; specifically on TVs and displays.
       </p>
     </div>
   </div>
@@ -105,7 +107,7 @@ layout: default
 </div>
 
 <div id="schedule">
-  <div class="container">
+  <div class="schedule-container container">
     <div class="schedule-info">
       <h2>Schedule</h2>
       {% for item in site.data.schedule %}
@@ -116,6 +118,14 @@ layout: default
       {% endfor %}
     </div>
     <div class="schedule-photo bleed-right"></div>
+  </div>
+  <div class="container">
+    <p>
+      Design Frontiers participants will have an opportunity to network with
+      engineers from Sony Electronics, showcase their resumes and portfolios,
+      and ask about career paths. Hors d’oeuvres and refreshments will be
+      provided!
+    </p>
   </div>
 </div>
 
@@ -179,10 +189,10 @@ layout: default
   <div class="container">
     <h2 class="color-accent">Partners</h2>
     <div class="partner-container">
-      <a href="https://www.sony.com/" target="_blank"
+      <a class="partner-sony" href="https://www.sony.com/" target="_blank"
         ><img src="assets/images/sony-logo.svg" alt="Sony"
       /></a>
-      <a href="https://designlab.ucsd.edu/" target="_blank"
+      <a class="partner-dlab" href="https://designlab.ucsd.edu/" target="_blank"
         ><img src="assets/images/dlab-logo.svg" alt="The Design Lab"
       /></a>
     </div>
@@ -203,7 +213,7 @@ layout: default
     </p>
     <br /><br /><br />
     <p>
-      <a class="arrow arrow-white" href="{{ site.signup }}" target="_blank"
+      <a class="btn btn-white" href="{{ site.signup }}" target="_blank"
         >Sign Up</a
       >
     </p>

@@ -54,3 +54,26 @@ body {
     margin-top: 2.5rem;
   }
 }
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 1.5rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 1.2rem !important;
+  line-height: 0;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  @include hover {
+    opacity: 0.6;
+  }
+  &.btn-accent {
+    color: $accent !important;
+    border: 0.2rem $accent solid;
+  }
+  &.btn-white {
+    color: #fff !important;
+    border: 0.2rem #fff solid;
+  }
+}

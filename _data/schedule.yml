@@ -1,14 +1,16 @@
 - title: Check In
-  time: 10:00am
-- title: Introduction
+  time: 10:30am
+- title: Intro
   time: 11:00am
 - title: Lightning Talks
   time: 11:30am
-- title: Lunch
+- title: Working Lunch
   time: 12:00pm
 - title: Design & Prototype
   time: 1:00pm
-- title: Test & Iterate
-  time: 3:00pm
-- title: Presentation, Feedback, & Closing
+- title: Presentations & Feedback
   time: 5:00pm
+- title: Closing
+  time: 6:00pm
+- title: Networking Session (for Design Frontier's Attendees)
+  time: 6:30pm
