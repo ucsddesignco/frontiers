@@ -3,7 +3,6 @@
  */
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: "Filson Pro", "Helvetica", "Arial", sans-serif;
   color: $dark-text;
   font-weight: 400;
 }
@@ -12,12 +11,13 @@ h1,
 h2,
 h3 {
   font-weight: 700;
+  font-family: 'Neue Plak Extended Bold', sans-serif;
 }
 
 h1 {
   font-size: 2.4rem;
   line-height: 3.4rem;
-  color: $dark-gray;
+  color: $white;
   @include md-up {
     font-size: 3.6rem;
     line-height: 4.2rem;
@@ -46,6 +46,7 @@ h3 {
 
 p,
 li {
+  font-family: 'NB International Pro Light', sans-serif;
   font-size: 1.3rem;
   line-height: 2.2rem;
   margin: 0.5rem 0;
@@ -58,6 +59,7 @@ li {
       line-height: 3.8rem;
     }
   }
+  color: $white;
 }
 
 #faq ul {
@@ -120,17 +122,9 @@ p a {
   }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .arrow {
-    display: none;
-  }
+a{
+  font-family: 'NB International Pro Light', sans-serif;
+  color: $white;
+  text-decoration: none;
 }
 
-a.blue-link {
-  color: $accent;
-  font-weight: initial;
-  transition: opacity 0.3s;
-  @include hover {
-    opacity: 0.6;
-  }
-}

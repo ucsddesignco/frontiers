@@ -31,3 +31,27 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Neue Plak Extended Bold';
+  src: url('../../assets/fonts/NeuePlak-ExtendedBold.woff') format('woff');
+  src: url('../../assets/fonts/NeuePlak-ExtendedBold.woff2') format('woff2');
+  font-weight: 400;
+  font-size: normal;
+}
+
+@font-face{
+  font-family: 'NB International Pro Mono';
+  src: url('../../assets/fonts/NBInternationalMonoWebfont.woff') format('woff');
+  src: url('../../assets/fonts/NBInternationalMonoWebfont.woff2') format('woff2');
+  font-weight: 400;
+  font-size: normal;
+}
+
+@font-face{
+  font-family: 'NB International Pro Light';
+  src: url('../../assets/fonts/NBInternationalMonoWebfont.woff2') format('woff2');
+  src: url('../../assets/fonts/NBInternationalMonoWebfont.woff') format('woff2');
+  font-weight: 400;
+  font-size: normal;
+}

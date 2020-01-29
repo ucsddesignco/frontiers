@@ -14,6 +14,81 @@
   }
 }
 
+/****** TEMP SCREEN *****/
+#mainHome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+
+  #mainContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    img{
+      @include sm-up{
+        width: 400px;
+        height: auto;
+      }
+
+      @include lg-up{
+        width: 600px;
+        height: auto;
+      }
+
+      width: 100%;
+      height: auto;
+    }
+
+    #idk{
+      @include lg-up{
+        display: flex;
+      }
+      display: block;
+      margin-top: 10rem;
+    }
+
+    div p {
+      margin-top: 4rem;
+    }
+
+    div {
+      margin: 3rem;
+      width: 100;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    #text{
+      margin-top: 6rem;
+    }
+
+    button {
+      height: 50px;
+      width: 150px;
+      color: $white;
+      background-color: #0000ff;
+      border: 2px solid $white;
+      margin-top: 3rem;
+
+      :hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
 /****** HOME ******/
 
 #home {
